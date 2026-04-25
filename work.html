@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Big Fish International — 300+ enterprise references across 40+ countries in procurement and HR development."/>
+  <title>Work — Big Fish International</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    .work-grid { display: grid; gap: clamp(24px, 3vw, 40px); }
+    .work-card--alt .work-card__img { order: 2; }
+    .work-card--alt .work-card__content { order: 1; }
+    @media (max-width: 1024px) {
+      .work-card--alt .work-card__img { order: 0; }
+      .work-card--alt .work-card__content { order: 0; }
+    }
+    .results-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      margin-top: 32px;
+    }
+    .results-row__item {
+      background: var(--surface);
+      padding: 24px 28px;
+    }
+    .results-row__num {
+      font-family: var(--font-display);
+      font-size: 40px;
+      letter-spacing: -.02em;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .results-row__label {
+      font-size: 13px;
+      color: var(--mute);
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav" role="navigation" aria-label="Main">
+  <div class="container nav__inner">
+    <a class="nav__logo" href="index.html" aria-label="Big Fish International — Home">
+      <img src="assets/logo.svg" alt="Big Fish" width="130" height="56"/>
+    </a>
+    <div class="nav__links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn">Book a call →</a>
+    </div>
+    <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<nav class="nav__mobile" aria-label="Mobile menu">
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="work.html">Work</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn--filled">Book a call →</a>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__eyebrow eyebrow">Our work</div>
+    <h1 class="display-1">300+ enterprises.<br/>40+ countries.</h1>
+    <p class="page-hero__sub">Selected engagements across two decades of procurement transformation. Due to client confidentiality, company names are withheld unless explicit consent is given.</p>
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<div class="stats">
+  <div class="container">
+    <div class="stats__grid">
+      <div class="stats__item">
+        <div class="stats__num">300<span class="accent-dot">+</span></div>
+        <div class="stats__label">Enterprise and ETI engagements</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__num">40<span class="accent-dot">+</span></div>
+        <div class="stats__label">Countries where we have delivered work</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__num">9</div>
+        <div class="stats__label">Languages of delivery</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__num">7<span class="accent-dot">y</span></div>
+        <div class="stats__label">Average client relationship length</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CASE STUDIES -->
+<section class="section">
+  <div class="container">
+    <div class="eyebrow">Selected engagements</div>
+    <h2 class="display-2 mb-32">Case studies.</h2>
+    <div class="work-grid">
+
+      <!-- Case 1 -->
+      <article class="work-card">
+        <div class="work-card__img placeholder">
+          <span class="placeholder__label">Engagement visual<br/>Aerospace sector</span>
+        </div>
+        <div class="work-card__content">
+          <div>
+            <div class="work-card__tag">Assessment · Development</div>
+            <h3 class="work-card__title">CPO capability transformation for a Tier 1 aerospace manufacturer</h3>
+            <div class="work-card__meta">Europe &nbsp;·&nbsp; 18-month engagement &nbsp;·&nbsp; 240 procurement professionals</div>
+            <p class="work-card__body">Following a group restructure, the client needed to rapidly upskill 240 procurement professionals across six European sites. We deployed a CRI-based assessment, identified critical competency gaps, and designed a blended development programme delivered in four languages.</p>
+            <div class="results-row">
+              <div class="results-row__item">
+                <div class="results-row__num">94%</div>
+                <div class="results-row__label">Competency target attainment</div>
+              </div>
+              <div class="results-row__item">
+                <div class="results-row__num">18<span style="font-size:.6em">mo</span></div>
+                <div class="results-row__label">Full programme delivery</div>
+              </div>
+              <div class="results-row__item">
+                <div class="results-row__num">4</div>
+                <div class="results-row__label">Languages delivered</div>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html" class="work-card__link">Discuss a similar challenge →</a>
+        </div>
+      </article>
+
+      <!-- Case 2 -->
+      <article class="work-card work-card--alt">
+        <div class="work-card__img placeholder">
+          <span class="placeholder__label">Engagement visual<br/>Luxury &amp; Retail sector</span>
+        </div>
+        <div class="work-card__content">
+          <div>
+            <div class="work-card__tag">Sourcing · Deployment</div>
+            <h3 class="work-card__title">Building a procurement function from scratch for a luxury conglomerate</h3>
+            <div class="work-card__meta">France / Italy &nbsp;·&nbsp; 24-month engagement &nbsp;·&nbsp; CPO hire + team</div>
+            <p class="work-card__body">The client had no structured procurement function. We designed the operating model, defined all role profiles, sourced and placed a CPO and eight senior buyers, and deployed TOSCA to manage the cultural integration across two legacy organisations.</p>
+            <div class="results-row">
+              <div class="results-row__item">
+                <div class="results-row__num">€48<span style="font-size:.6em">M</span></div>
+                <div class="results-row__label">Savings identified in year one</div>
+              </div>
+              <div class="results-row__item">
+                <div class="results-row__num">9</div>
+                <div class="results-row__label">Senior hires placed</div>
+              </div>
+              <div class="results-row__item">
+                <div class="results-row__num">24<span style="font-size:.6em">mo</span></div>
+                <div class="results-row__label">Organisation fully operational</div>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html" class="work-card__link">Discuss a similar challenge →</a>
+        </div>
+      </article>
+
+      <!-- Case 3 -->
+      <article class="work-card">
+        <div class="work-card__img placeholder">
+          <span class="placeholder__label">Engagement visual<br/>Public sector</span>
+        </div>
+        <div class="work-card__content">
+          <div>
+            <div class="work-card__tag">Development · Deploy</div>
+            <h3 class="work-card__title">Procurement professionalisation programme for a pan-European public body</h3>
+            <div class="work-card__meta">EU institutions &nbsp;·&nbsp; 36-month programme &nbsp;·&nbsp; 320 staff</div>
+            <p class="work-card__body">A major European public institution required systematic upskilling of its procurement workforce to meet new EU directives on sustainable and digital procurement. We designed and delivered a 36-month certification pathway in partnership with CIPS.</p>
+            <div class="results-row">
+              <div class="results-row__item">
+                <div class="results-row__num">320</div>
+                <div class="results-row__label">Staff certified</div>
+              </div>
+              <div class="results-row__item">
+                <div class="results-row__num">98%</div>
+                <div class="results-row__label">Programme completion rate</div>
+              </div>
+              <div class="results-row__item">
+                <div class="results-row__num">3</div>
+                <div class="results-row__label">CIPS pathways delivered</div>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html" class="work-card__link">Discuss a similar challenge →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="align-items:start;gap:clamp(40px,7vw,80px)">
+      <div>
+        <div class="eyebrow">Sectors served</div>
+        <h2 class="display-2">No sector is too complex for procurement expertise.</h2>
+      </div>
+      <div>
+        <div class="industries">
+          <span class="industry-tag">Aerospace &amp; Defence</span>
+          <span class="industry-tag">Automotive</span>
+          <span class="industry-tag">Energy</span>
+          <span class="industry-tag">Financial Services</span>
+          <span class="industry-tag">FMCG</span>
+          <span class="industry-tag">Healthcare</span>
+          <span class="industry-tag">Luxury &amp; Retail</span>
+          <span class="industry-tag">Public Sector</span>
+          <span class="industry-tag">Technology</span>
+          <span class="industry-tag">Transport</span>
+          <span class="industry-tag">Industrial</span>
+          <span class="industry-tag">Pharma</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--ink">
+  <div class="container cta-band">
+    <div>
+      <div class="eyebrow" style="color:rgba(239,234,224,.5)">Start a conversation</div>
+      <h2 class="display-3" style="color:var(--surface)">Tell us about your procurement challenge.</h2>
+    </div>
+    <div class="cta-band__btns">
+      <a href="contact.html" class="btn btn--filled">Get in touch →</a>
+      <a href="services.html" class="btn btn--outline-light">Our services</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <div class="footer__logo"><a href="index.html"><img src="assets/logo-sand.svg" alt="Big Fish" width="120" height="52"/></a></div>
+        <p class="footer__desc">Sepapaja tn 6<br/>Tallinn 15551, Estonia<br/><br/>+33 1 45 62 19 80<br/>info@e-bigfish.com</p>
+      </div>
+      <div>
+        <div class="footer__heading">Practice</div>
+        <ul class="footer__links">
+          <li><a href="services.html">Assessment</a></li>
+          <li><a href="services.html">Sourcing</a></li>
+          <li><a href="services.html">Development</a></li>
+          <li><a href="services.html">Deployment</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__heading">Ecosystem</div>
+        <ul class="footer__links">
+          <li><a href="about.html">Lab-B52k</a></li>
+          <li><a href="about.html">Federations</a></li>
+          <li><a href="about.html">Academic</a></li>
+          <li><a href="about.html">Research</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__heading">Company</div>
+        <ul class="footer__links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Big Fish International. All rights reserved.</span>
+      <span>People Centric Development</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
