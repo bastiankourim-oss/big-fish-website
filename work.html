@@ -6,7 +6,7 @@
   <meta name="description" content="Big Fish International — 300+ enterprise references across 40+ countries in procurement and HR development."/>
   <title>Work — Big Fish International</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles.css?v=10"/>
   <style>
     .work-grid { display: grid; gap: clamp(24px, 3vw, 40px); }
     .work-card--alt .work-card__img { order: 2; }
@@ -49,11 +49,12 @@
       <img src="assets/logo.svg" alt="Big Fish" width="130" height="56"/>
     </a>
     <div class="nav__links">
+      <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="work.html">Work</a>
+      <a href="work.html" class="active">Work</a>
       <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn">Book a call →</a>
+      <a href="contact.html" class="btn btn--nav-cta">Book a call →</a>
     </div>
     <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -110,8 +111,8 @@
 
       <!-- Case 1 -->
       <article class="work-card">
-        <div class="work-card__img placeholder">
-          <span class="placeholder__label">Engagement visual<br/>Aerospace sector</span>
+        <div class="work-card__img" style="overflow:hidden;position:relative">
+          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=900&q=80" alt="Aerospace manufacturing" style="position:absolute;inset:28px;width:calc(100% - 56px);height:calc(100% - 56px);object-fit:cover;object-position:center"/>
         </div>
         <div class="work-card__content">
           <div>
@@ -140,8 +141,8 @@
 
       <!-- Case 2 -->
       <article class="work-card work-card--alt">
-        <div class="work-card__img placeholder">
-          <span class="placeholder__label">Engagement visual<br/>Luxury &amp; Retail sector</span>
+        <div class="work-card__img" style="overflow:hidden;position:relative">
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&q=80" alt="Luxury corporate interior" style="position:absolute;inset:28px;width:calc(100% - 56px);height:calc(100% - 56px);object-fit:cover;object-position:center"/>
         </div>
         <div class="work-card__content">
           <div>
@@ -170,8 +171,8 @@
 
       <!-- Case 3 -->
       <article class="work-card">
-        <div class="work-card__img placeholder">
-          <span class="placeholder__label">Engagement visual<br/>Public sector</span>
+        <div class="work-card__img" style="overflow:hidden;position:relative">
+          <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=900&q=80" alt="European public institution" style="position:absolute;inset:28px;width:calc(100% - 56px);height:calc(100% - 56px);object-fit:cover;object-position:center"/>
         </div>
         <div class="work-card__content">
           <div>
@@ -249,8 +250,8 @@
   <div class="container">
     <div class="footer__top">
       <div>
-        <div class="footer__logo"><a href="index.html"><img src="assets/logo-sand.svg" alt="Big Fish" width="120" height="52"/></a></div>
-        <p class="footer__desc">Sepapaja tn 6<br/>Tallinn 15551, Estonia<br/><br/>+33 1 45 62 19 80<br/>info@e-bigfish.com</p>
+        <div class="footer__logo" style="text-align:left;margin-left:0"><a href="index.html" style="display:inline-block"><img style="margin:0;display:block" src="assets/logo-sand.svg" alt="Big Fish" width="120" height="52"/></a></div>
+        <p class="footer__desc">Paris, France<br/><br/>+33 1 45 62 19 80<br/>info@e-bigfish.com</p>
       </div>
       <div>
         <div class="footer__heading">Practice</div>
