@@ -6,7 +6,7 @@
   <meta name="description" content="Lab-B52k — Big Fish International's research and intelligence platform for procurement leaders."/>
   <title>Big Fish International | Lab-B52k</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
-  <link rel="stylesheet" href="styles.css?v=16"/>
+  <link rel="stylesheet" href="styles.css?v=18"/>
 </head>
 <body>
 
@@ -65,11 +65,11 @@
         <div class="lab-card__title"><span class="lang-en">Procurement maturity in Europe 2025 — in partnership with Inverto</span><span class="lang-fr">Maturité achats en Europe 2025 — en partenariat avec Inverto</span></div>
         <p class="lab-card__body lang-en">A cross-sector analysis of procurement capability and maturity across 340 European organisations. Benchmarks by sector, country, and company size. The most comprehensive dataset of its kind in the European market.</p>
         <p class="lab-card__body lang-fr">Une analyse intersectorielle de la maturité achats auprès de 340 organisations européennes. Benchmarks par secteur, pays et taille d'entreprise. Le jeu de données le plus complet du marché européen.</p>
-        <div class="lab-card__gate" style="margin-top:32px">
-          <input class="lab-gate-input" type="email" placeholder="Your work email" id="study-email"/>
-          <button class="btn btn--filled" onclick="gateSubmit('study-email','study-confirm')"><span class="lang-en">Get the study →</span><span class="lang-fr">Obtenir l'étude →</span></button>
-        </div>
-        <p id="study-confirm" style="display:none;margin-top:12px;font-size:13px;color:rgba(239,234,224,.7)">✓ We'll send it to your inbox within minutes.</p>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="bf-capture-form" style="margin-top:32px">
+          <input type="email" name="email" data-placeholder-en="Your work email" data-placeholder-fr="Votre email professionnel" required/>
+          <input type="hidden" name="resource" value="Procurement Maturity Europe 2025"/>
+          <button type="submit"><span class="lang-en">Get the study →</span><span class="lang-fr">Obtenir l'étude →</span></button>
+        </form>
       </div>
 
       <!-- Article 1 -->
@@ -78,11 +78,11 @@
         <div class="lab-card__title"><span class="lang-en">Why 70% of procurement transformations stall after 18 months</span><span class="lang-fr">Pourquoi 70% des transformations achats s'essoufflent après 18 mois</span></div>
         <p class="lab-card__body lang-en">The pattern is consistent across sectors: ambitious roadmaps, early wins, then plateau. Our analysis of 80 transformation programmes identifies the people-side factors that predict stall — and the ones that don't.</p>
         <p class="lab-card__body lang-fr">Le schéma est invariable : feuilles de route ambitieuses, victoires rapides, puis plateau. Notre analyse de 80 programmes de transformation identifie les facteurs humains qui prédisent le blocage — et ceux qui l'évitent.</p>
-        <div class="lab-card__gate">
-          <input class="lab-gate-input" type="email" placeholder="Your work email" id="art1-email"/>
-          <button class="btn" onclick="gateSubmit('art1-email','art1-confirm')">Read the insight →</button>
-        </div>
-        <p id="art1-confirm" style="display:none;margin-top:10px;font-size:13px;color:var(--mute)">✓ On its way to your inbox.</p>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="bf-capture-form">
+          <input type="email" name="email" data-placeholder-en="Your work email" data-placeholder-fr="Votre email professionnel" required/>
+          <input type="hidden" name="resource" value="Why 70% of procurement transformations stall"/>
+          <button type="submit"><span class="lang-en">Get it →</span><span class="lang-fr">Télécharger →</span></button>
+        </form>
       </div>
 
       <!-- Article 2 -->
@@ -91,23 +91,24 @@
         <div class="lab-card__title"><span class="lang-en">The CPO of 2030: competency shifts and the skills gap ahead</span><span class="lang-fr">Le CPO de 2030 : évolution des compétences et déficit de talents</span></div>
         <p class="lab-card__body lang-en">Drawing on CRI data from 12 000 assessments across 40 countries, we map how the competency profile of senior procurement leaders is shifting — and where the critical capability gaps will emerge over the next five years.</p>
         <p class="lab-card__body lang-fr">À partir des données CRI de 12 000 évaluations dans 40 pays, nous cartographions l'évolution du profil de compétences des dirigeants achats — et où se situeront les déficits critiques dans cinq ans.</p>
-        <div class="lab-card__gate">
-          <input class="lab-gate-input" type="email" placeholder="Your work email" id="art2-email"/>
-          <button class="btn" onclick="gateSubmit('art2-email','art2-confirm')">Read the research →</button>
-        </div>
-        <p id="art2-confirm" style="display:none;margin-top:10px;font-size:13px;color:var(--mute)">✓ On its way to your inbox.</p>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="bf-capture-form">
+          <input type="email" name="email" data-placeholder-en="Your work email" data-placeholder-fr="Votre email professionnel" required/>
+          <input type="hidden" name="resource" value="CPO of 2030 Competency Research"/>
+          <button type="submit"><span class="lang-en">Get it →</span><span class="lang-fr">Télécharger →</span></button>
+        </form>
       </div>
 
       <!-- Article 3 -->
-      <div class="lab-card lang-fr">
-        <div class="lab-card__tag">Point de vue · 2023</div>
-        <div class="lab-card__title">L'achat durable : compétences manquantes et leviers de développement</div>
-        <p class="lab-card__body">À mesure que les obligations ESG se renforcent, les équipes achats font face à un déficit de compétences structurel. Nous analysons les rôles critiques, les lacunes identifiées dans le CRI, et les parcours de développement les plus efficaces.</p>
-        <div class="lab-card__gate">
-          <input class="lab-gate-input" type="email" placeholder="Votre email professionnel" id="art3-email"/>
-          <button class="btn" onclick="gateSubmit('art3-email','art3-confirm')">Lire l'analyse →</button>
-        </div>
-        <p id="art3-confirm" style="display:none;margin-top:10px;font-size:13px;color:var(--mute)">✓ En route vers votre boîte mail.</p>
+      <div class="lab-card">
+        <div class="lab-card__tag"><span class="lang-en">Insight · 2023</span><span class="lang-fr">Point de vue · 2023</span></div>
+        <div class="lab-card__title"><span class="lang-en">Sustainable procurement: missing skills and development levers</span><span class="lang-fr">L'achat durable : compétences manquantes et leviers de développement</span></div>
+        <p class="lab-card__body lang-en">As ESG obligations intensify, procurement teams face a structural skills deficit. We analyse the critical roles, the gaps identified in the CRI, and the most effective development pathways.</p>
+        <p class="lab-card__body lang-fr">À mesure que les obligations ESG se renforcent, les équipes achats font face à un déficit de compétences structurel. Nous analysons les rôles critiques, les lacunes identifiées dans le CRI, et les parcours de développement les plus efficaces.</p>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="bf-capture-form">
+          <input type="email" name="email" data-placeholder-en="Your work email" data-placeholder-fr="Votre email professionnel" required/>
+          <input type="hidden" name="resource" value="Sustainable procurement skills"/>
+          <button type="submit"><span class="lang-en">Read the analysis →</span><span class="lang-fr">Lire l'analyse →</span></button>
+        </form>
       </div>
 
       <!-- Article 4 -->
@@ -116,11 +117,11 @@
         <div class="lab-card__title"><span class="lang-en">Procurement salaries in France, Germany &amp; the UK — 2023 benchmark</span><span class="lang-fr">Salaires achats en France, Allemagne &amp; Royaume-Uni — Benchmark 2023</span></div>
         <p class="lab-card__body lang-en">An annual salary and compensation benchmark covering 24 procurement roles across three major European markets. Built from placement and network data, cross-referenced with federation surveys from CDAF, BME and CIPS.</p>
         <p class="lab-card__body lang-fr">Un benchmark annuel de rémunération couvrant 24 rôles achats sur trois grands marchés européens. Construit à partir des données de placement et du réseau, croisées avec les enquêtes des fédérations CDAF, BME et CIPS.</p>
-        <div class="lab-card__gate">
-          <input class="lab-gate-input" type="email" placeholder="Your work email" id="art4-email"/>
-          <button class="btn" onclick="gateSubmit('art4-email','art4-confirm')">Get the benchmark →</button>
-        </div>
-        <p id="art4-confirm" style="display:none;margin-top:10px;font-size:13px;color:var(--mute)">✓ On its way to your inbox.</p>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="bf-capture-form">
+          <input type="email" name="email" data-placeholder-en="Your work email" data-placeholder-fr="Votre email professionnel" required/>
+          <input type="hidden" name="resource" value="Procurement Salary Benchmark 2023"/>
+          <button type="submit"><span class="lang-en">Get it →</span><span class="lang-fr">Télécharger →</span></button>
+        </form>
       </div>
 
     </div>
@@ -138,11 +139,12 @@
         <p class="body-lg mt-24 lang-fr" style="opacity:.8">Un email par trimestre. Synthèses de recherche, données de benchmark et perspectives de praticiens — sélectionnés pour les CPO et directeurs achats.</p>
       </div>
       <div>
-        <div style="display:flex;flex-direction:column;gap:12px">
-          <input class="lab-gate-input" type="email" placeholder="Your work email" id="nl-email" data-placeholder-en="Your work email" data-placeholder-fr="Votre email professionnel" style="border-color:rgba(239,234,224,.3);color:var(--surface);padding:16px 20px;font-size:16px"/>
-          <button class="btn btn--filled" style="align-self:flex-start" onclick="gateSubmit('nl-email','nl-confirm')"><span class="lang-en">Subscribe →</span><span class="lang-fr">S'inscrire →</span></button>
-          <p id="nl-confirm" style="display:none;font-size:13px;color:rgba(239,234,224,.7)">✓ You're on the list. Next edition lands in Q2 2025.</p>
-        </div>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="bf-capture-form" style="flex-direction:column;align-items:flex-start">
+          <input type="email" name="email" data-placeholder-en="Your work email" data-placeholder-fr="Votre email professionnel" required style="border-color:rgba(239,234,224,.3);color:var(--surface);padding:16px 20px;font-size:16px;width:100%;max-width:380px"/>
+          <input type="hidden" name="resource" value="Lab-B52k Newsletter"/>
+          <button type="submit"><span class="lang-en">Subscribe →</span><span class="lang-fr">S'inscrire →</span></button>
+          <p style="font-size:12px;color:rgba(239,234,224,.5);margin-top:8px"><span class="lang-en">Next edition lands in Q3 2026.</span><span class="lang-fr">Prochaine édition : T3 2026.</span></p>
+        </form>
       </div>
     </div>
   </div>
@@ -152,25 +154,25 @@
 <section class="section">
   <div class="container">
     <div class="eyebrow"><span class="lang-en">Academic &amp; industry partners</span><span class="lang-fr">Partenaires académiques &amp; industriels</span></div>
-    <h2 class="display-2 mb-32" style="max-width:20ch"><span class="lang-en">Research built with the field, not above it.</span><span class="lang-fr">Une recherche construite avec le terrain, pas au-dessus.</span></h2>
+    <h2 class="display-2 mb-32" style="max-width:20ch"><span class="lang-en">Research built with the field, not above it.</span><span class="lang-fr">Une recherche construite avec le terrain, pas à l'écart.</span></h2>
     <div class="grid-4">
       <div class="grid-cell card">
-        <div class="card__title" style="font-size:20px">IPSERA</div>
+        <div class="partner-logo"><img src="assets/logo-ipsera.jpg" alt="IPSERA" style="max-height:67px"/></div>
         <p class="card__body lang-en">International Purchasing &amp; Supply Education &amp; Research Association. Editorial board member.</p>
         <p class="card__body lang-fr">Association internationale de recherche en achats. Membre du comité éditorial.</p>
       </div>
       <div class="grid-cell card">
-        <div class="card__title" style="font-size:20px">CDAF</div>
+        <div class="partner-logo"><img src="assets/logo-cdaf.svg" alt="CDAF" style="max-height:86px"/></div>
         <p class="card__body lang-en">Compagnie des Dirigeants et Acheteurs de France. Research partner since 2015.</p>
         <p class="card__body lang-fr">Compagnie des Dirigeants et Acheteurs de France. Partenaire de recherche depuis 2015.</p>
       </div>
       <div class="grid-cell card">
-        <div class="card__title" style="font-size:20px">Inverto</div>
+        <div class="partner-logo"><img src="assets/logo-inverto.png" alt="Inverto"/></div>
         <p class="card__body lang-en">Joint benchmarking studies on procurement maturity across European markets.</p>
         <p class="card__body lang-fr">Études de benchmark conjointes sur la maturité achats en Europe.</p>
       </div>
       <div class="grid-cell card">
-        <div class="card__title" style="font-size:20px">CIPS / ISM</div>
+        <div class="partner-logo"><img src="assets/logo-cips.webp" alt="CIPS / ISM" style="max-height:79px"/></div>
         <p class="card__body lang-en">Certification and competency framework alignment. Co-published content since 2010.</p>
         <p class="card__body lang-fr">Alignement des référentiels de certification et compétences. Co-publications depuis 2010.</p>
       </div>
@@ -182,7 +184,6 @@
 <section class="section section--ink">
   <div class="container cta-band">
     <div>
-      <div class="eyebrow" style="color:rgba(239,234,224,.5)"><span class="lang-en">Collaborate</span><span class="lang-fr">Collaborer</span></div>
       <h2 class="display-3" style="color:var(--surface)"><span class="lang-en">Contribute to the next Lab-B52k study.</span><span class="lang-fr">Contribuez à la prochaine étude Lab-B52k.</span></h2>
     </div>
     <div class="cta-band__btns">
@@ -223,8 +224,8 @@
         <ul class="footer__links">
           <li><a href="about.html"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a></li>
           <li><a href="work.html"><span class="lang-en">Work</span><span class="lang-fr">Références</span></a></li>
+          <li><a href="candidates.html"><span class="lang-en">Candidates</span><span class="lang-fr">Candidats</span></a></li>
           <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-fr">Contact</span></a></li>
-          <li><a href="contact.html"><span class="lang-en">Careers</span><span class="lang-fr">Carrières</span></a></li>
         </ul>
       </div>
     </div>
