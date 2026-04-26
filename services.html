@@ -4,9 +4,9 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Big Fish International services — assessment, sourcing, development and deployment for procurement teams."/>
-  <title>Services — Big Fish International</title>
+  <title>Big Fish International | Our Approach</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
-  <link rel="stylesheet" href="styles.css?v=10"/>
+  <link rel="stylesheet" href="styles.css?v=16"/>
 </head>
 <body>
 
@@ -15,13 +15,19 @@
     <a class="nav__logo" href="index.html" aria-label="Big Fish International — Home">
       <img src="assets/logo.svg" alt="Big Fish" width="130" height="56"/>
     </a>
-    <div class="nav__links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html" class="active">Services</a>
-      <a href="work.html">Work</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn btn--nav-cta">Book a call →</a>
+            <div class="nav__links">
+      <a href="index.html"><span class="lang-en">Home</span><span class="lang-fr">Accueil</span></a>
+      <a href="about.html"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a>
+      <a href="services.html" class="active"><span class="lang-en">Services</span><span class="lang-fr">Services</span></a>
+      <a href="work.html"><span class="lang-en">Work</span><span class="lang-fr">Références</span></a>
+      <a href="lab.html"><span class="lang-en">Lab-B52k</span><span class="lang-fr">Lab-B52k</span></a>
+      <a href="contact.html"><span class="lang-en">Contact</span><span class="lang-fr">Contact</span></a>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+        <span style="color:var(--mute);font-size:11px">/</span>
+        <button class="lang-btn" data-lang="fr" onclick="setLang('fr')">FR</button>
+      </div>
+      <a href="contact.html" class="btn btn--nav-cta"><span class="lang-en">Book a call →</span><span class="lang-fr">Prendre RDV →</span></a>
     </div>
     <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -29,19 +35,22 @@
   </div>
 </nav>
 <nav class="nav__mobile" aria-label="Mobile menu">
-  <a href="about.html">About</a>
+  <a href="index.html"><span class="lang-en">Home</span><span class="lang-fr">Accueil</span></a>
+  <a href="about.html"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a>
   <a href="services.html">Services</a>
-  <a href="work.html">Work</a>
+  <a href="work.html"><span class="lang-en">Work</span><span class="lang-fr">Références</span></a>
+  <a href="lab.html">Lab-B52k</a>
   <a href="contact.html">Contact</a>
-  <a href="contact.html" class="btn btn--filled">Book a call →</a>
+  <a href="contact.html" class="btn btn--filled"><span class="lang-en">Book a call →</span><span class="lang-fr">Prendre RDV →</span></a>
 </nav>
 
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <div class="page-hero__eyebrow eyebrow">What we do</div>
-    <h1 class="display-1">A methodology built on twenty-five years of evidence.</h1>
-    <p class="page-hero__sub">Four integrated practice areas. Three proprietary frameworks. One principle: people make the difference between a procurement strategy that looks good on paper and one that delivers.</p>
+    <div class="page-hero__eyebrow eyebrow"><span class="lang-en">What we do</span><span class="lang-fr">Ce que nous faisons</span></div>
+    <h1 class="display-1"><span class="lang-en">A methodology built on twenty-five years of evidence.</span><span class="lang-fr">Une méthodologie fondée sur vingt-cinq ans d'expérience.</span></h1>
+    <p class="page-hero__sub lang-en">Four integrated practice areas. Three proprietary frameworks. One principle: people make the difference between a procurement strategy that looks good on paper and one that delivers.</p>
+    <p class="page-hero__sub lang-fr">Quatre domaines d'expertise intégrés. Trois frameworks propriétaires. Un seul principe : les personnes font la différence entre une stratégie achats sur le papier et une qui délivre.</p>
   </div>
 </section>
 
@@ -49,19 +58,20 @@
 <section class="section">
   <div class="container">
 
-    <div class="service-pillar">
+    <div class="service-pillar" style="border-top:none">
       <div>
         <div class="service-pillar__num">01</div>
-        <h2 class="display-3">Assess</h2>
+        <h2 class="display-3"><span class="lang-en">Assess</span><span class="lang-fr">Évaluer</span></h2>
       </div>
       <div class="service-pillar__body">
-        <p class="body-lg" style="opacity:.85">Map the gap between where your procurement function is and where it needs to be. Our CRI (Competency and Role Index) framework gives you an objective, benchmarked view of individual and team capability across all procurement roles.</p>
+        <p class="body-lg lang-en" style="opacity:.85">Map the gap between where your procurement function is and where it needs to be. Our CRI (Competency and Role Index) framework gives you an objective, benchmarked view of individual and team capability across all procurement roles.</p>
+        <p class="body-lg lang-fr" style="opacity:.85">Mesurez l'écart entre où se trouve votre direction achats et où elle doit être. Notre framework CRI offre une vision objective et benchmarkée des compétences individuelles et collectives, pour tous les rôles achats.</p>
         <ul class="service-pillar__list mt-32">
-          <li>Individual competency mapping against the CRI framework</li>
-          <li>Team maturity audit (structure, roles, coverage)</li>
-          <li>Benchmarking against sector and regional peers</li>
-          <li>Gap analysis and prioritised action roadmap</li>
-          <li>Executive presentation of findings and recommendations</li>
+          <li class="lang-en">Individual competency mapping against the CRI framework</li><li class="lang-fr">Cartographie des compétences individuelles selon le CRI</li>
+          <li class="lang-en">Team maturity audit (structure, roles, coverage)</li><li class="lang-fr">Audit de maturité de l'équipe (structure, rôles, couverture)</li>
+          <li class="lang-en">Benchmarking against sector and regional peers</li><li class="lang-fr">Benchmark sectoriel et régional</li>
+          <li class="lang-en">Gap analysis and prioritised action roadmap</li><li class="lang-fr">Analyse des écarts et feuille de route priorisée</li>
+          <li class="lang-en">Executive presentation of findings and recommendations</li><li class="lang-fr">Restitution exécutive des résultats et recommandations</li>
         </ul>
       </div>
     </div>
@@ -69,16 +79,17 @@
     <div class="service-pillar">
       <div>
         <div class="service-pillar__num">02</div>
-        <h2 class="display-3">Source</h2>
+        <h2 class="display-3"><span class="lang-en">Source</span><span class="lang-fr">Sourcer</span></h2>
       </div>
       <div class="service-pillar__body">
-        <p class="body-lg" style="opacity:.85">Finding the right procurement talent is not about job boards. It requires a network of 52 000 active professionals, deep knowledge of the market, and the ability to evaluate candidates beyond the CV. We use our SRI (Sourcing and Recruitment Index) to match precisely.</p>
+        <p class="body-lg lang-en" style="opacity:.85">Finding the right procurement talent is not about job boards. It requires a network of 52 000 active professionals, deep knowledge of the market, and the ability to evaluate candidates beyond the CV. We use our SRI (Sourcing and Recruitment Index) to match precisely.</p>
+        <p class="body-lg lang-fr" style="opacity:.85">Trouver les bons talents achats ne se limite pas aux annonces. Cela exige un réseau de 52 000 professionnels actifs, une connaissance fine du marché et la capacité d'évaluer au-delà du CV. Notre SRI garantit la précision de chaque placement.</p>
         <ul class="service-pillar__list mt-32">
-          <li>Executive search for CPO and senior procurement roles</li>
-          <li>Mid-level sourcing across functional specialisms</li>
-          <li>Interim placement for transformation projects</li>
-          <li>SRI-based candidate evaluation and calibration</li>
-          <li>Onboarding support and 90-day success tracking</li>
+          <li class="lang-en">Executive search for CPO and senior procurement roles</li><li class="lang-fr">Recherche de dirigeants pour les rôles CPO et achats seniors</li>
+          <li class="lang-en">Mid-level sourcing across functional specialisms</li><li class="lang-fr">Sourcing de profils intermédiaires sur toutes les spécialisations</li>
+          <li class="lang-en">Interim placement for transformation projects</li><li class="lang-fr">Placement d'intérimaires pour les projets de transformation</li>
+          <li class="lang-en">SRI-based candidate evaluation and calibration</li><li class="lang-fr">Évaluation et calibration des candidats via le SRI</li>
+          <li class="lang-en">Onboarding support and 90-day success tracking</li><li class="lang-fr">Accompagnement à l'intégration et suivi sur 90 jours</li>
         </ul>
       </div>
     </div>
@@ -86,16 +97,17 @@
     <div class="service-pillar">
       <div>
         <div class="service-pillar__num">03</div>
-        <h2 class="display-3">Develop</h2>
+        <h2 class="display-3"><span class="lang-en">Develop</span><span class="lang-fr">Développer</span></h2>
       </div>
       <div class="service-pillar__body">
-        <p class="body-lg" style="opacity:.85">Building procurement capability is a long-term investment. We design and deliver tailored learning journeys — from targeted skills workshops to multi-year capability programmes — all anchored in real procurement contexts and measurable outcomes.</p>
+        <p class="body-lg lang-en" style="opacity:.85">Building procurement capability is a long-term investment. We design and deliver tailored learning journeys — from targeted skills workshops to multi-year capability programmes — all anchored in real procurement contexts and measurable outcomes.</p>
+        <p class="body-lg lang-fr" style="opacity:.85">Développer la compétence achats est un investissement de long terme. Nous concevons et délivrons des parcours sur mesure — des ateliers ciblés aux programmes pluriannuels — ancrés dans des contextes réels et des résultats mesurables.</p>
         <ul class="service-pillar__list mt-32">
-          <li>Custom learning programme design and facilitation</li>
-          <li>Procurement leadership development (CPO pipeline)</li>
-          <li>Certification pathways in partnership with CIPS, ISM and BME</li>
-          <li>Coaching for senior procurement leaders</li>
-          <li>Team learning sprints and functional bootcamps</li>
+          <li class="lang-en">Custom learning programme design and facilitation</li><li class="lang-fr">Conception et animation de programmes de développement sur mesure</li>
+          <li class="lang-en">Procurement leadership development (CPO pipeline)</li><li class="lang-fr">Développement du leadership achats (pipeline CPO)</li>
+          <li class="lang-en">Certification pathways in partnership with CIPS, ISM and BME</li><li class="lang-fr">Parcours de certification en partenariat avec CIPS, ISM et BME</li>
+          <li class="lang-en">Coaching for senior procurement leaders</li><li class="lang-fr">Coaching des dirigeants achats seniors</li>
+          <li class="lang-en">Team learning sprints and functional bootcamps</li><li class="lang-fr">Sprints d'apprentissage collectif et bootcamps fonctionnels</li>
         </ul>
       </div>
     </div>
@@ -103,16 +115,17 @@
     <div class="service-pillar">
       <div>
         <div class="service-pillar__num">04</div>
-        <h2 class="display-3">Deploy</h2>
+        <h2 class="display-3"><span class="lang-en">Deploy</span><span class="lang-fr">Déployer</span></h2>
       </div>
       <div class="service-pillar__body">
-        <p class="body-lg" style="opacity:.85">Transformation requires putting the right people in the right roles at the right moment. We help organisations design their procurement organisation structure, define role profiles, and manage deployment of talent through major change cycles using the TOSCA methodology.</p>
+        <p class="body-lg lang-en" style="opacity:.85">Transformation requires putting the right people in the right roles at the right moment. We help organisations design their procurement organisation structure, define role profiles, and manage deployment of talent through major change cycles using the TOSCA methodology.</p>
+        <p class="body-lg lang-fr" style="opacity:.85">Toute transformation passe par les bonnes personnes aux bons postes au bon moment. Nous aidons les organisations à concevoir leur structure achats, définir les profils de rôles et piloter le déploiement des talents dans les cycles de changement majeurs via TOSCA.</p>
         <ul class="service-pillar__list mt-32">
-          <li>Procurement operating model design</li>
-          <li>Role architecture and job family frameworks</li>
-          <li>Change management for procurement transformation</li>
-          <li>TOSCA-led deployment planning and tracking</li>
-          <li>Integration support post-merger and acquisition</li>
+          <li class="lang-en">Procurement operating model design</li><li class="lang-fr">Conception du modèle opérationnel achats</li>
+          <li class="lang-en">Role architecture and job family frameworks</li><li class="lang-fr">Architecture des rôles et référentiels de familles de postes</li>
+          <li class="lang-en">Change management for procurement transformation</li><li class="lang-fr">Conduite du changement pour la transformation achats</li>
+          <li class="lang-en">TOSCA-led deployment planning and tracking</li><li class="lang-fr">Planification et suivi du déploiement via TOSCA</li>
+          <li class="lang-en">Integration support post-merger and acquisition</li><li class="lang-fr">Accompagnement à l'intégration post-fusion et acquisition</li>
         </ul>
       </div>
     </div>
@@ -123,23 +136,26 @@
 <!-- METHODOLOGY -->
 <section class="section section--dark">
   <div class="container">
-    <div class="eyebrow">Proprietary frameworks</div>
-    <h2 class="display-2 mb-32">Three tools. One integrated system.</h2>
+    <div class="eyebrow"><span class="lang-en">Proprietary frameworks</span><span class="lang-fr">Frameworks propriétaires</span></div>
+    <h2 class="display-2 mb-32"><span class="lang-en">Three tools. One integrated system.</span><span class="lang-fr">Trois outils. Un système intégré.</span></h2>
     <div class="methodology-grid">
       <div class="methodology-card" style="background:rgba(239,234,224,.05)">
         <div class="methodology-card__code">CRI</div>
         <div class="methodology-card__title" style="color:var(--surface)">Competency &amp; Role<br/>Index</div>
-        <p class="methodology-card__body" style="color:rgba(239,234,224,.9)">A validated competency framework covering all procurement roles from buyer to CPO. Built on 25 years of data and continuously benchmarked across sectors and geographies. The foundation of every assessment and development engagement.</p>
+        <p class="methodology-card__body lang-en" style="color:rgba(239,234,224,.9)">A validated competency framework covering all procurement roles from buyer to CPO. Built on 25 years of data and continuously benchmarked across sectors and geographies. The foundation of every assessment and development engagement.</p>
+        <p class="methodology-card__body lang-fr" style="color:rgba(239,234,224,.9)">Un référentiel de compétences validé couvrant tous les rôles achats, du buyer au CPO. Fondé sur 25 ans de données et benchmarké en continu. Le socle de chaque évaluation et programme de développement.</p>
       </div>
       <div class="methodology-card" style="background:rgba(239,234,224,.05)">
         <div class="methodology-card__code">SRI</div>
         <div class="methodology-card__title" style="color:var(--surface)">Sourcing &amp; Recruitment<br/>Index</div>
-        <p class="methodology-card__body" style="color:rgba(239,234,224,.9)">A structured evaluation methodology for procurement talent acquisition. Ensures candidates are assessed against consistent, procurement-specific criteria — reducing bias, improving quality of hire, and accelerating time to contribution.</p>
+        <p class="methodology-card__body lang-en" style="color:rgba(239,234,224,.9)">A structured evaluation methodology for procurement talent acquisition. Ensures candidates are assessed against consistent, procurement-specific criteria — reducing bias, improving quality of hire, and accelerating time to contribution.</p>
+        <p class="methodology-card__body lang-fr" style="color:rgba(239,234,224,.9)">Une méthodologie structurée d'acquisition des talents achats. Garantit que les candidats sont évalués selon des critères spécifiques et constants — réduisant les biais, améliorant la qualité des recrutements et accélérant la montée en compétences.</p>
       </div>
       <div class="methodology-card" style="background:rgba(239,234,224,.05)">
         <div class="methodology-card__code">TOSCA</div>
         <div class="methodology-card__title" style="color:var(--surface)">Transformation Operating<br/>System</div>
-        <p class="methodology-card__body" style="color:rgba(239,234,224,.9)">A change and deployment methodology for procurement organisations undergoing transformation. Integrates culture, process, structure and people into a single programme logic — ensuring changes land and stick at every level of the organisation.</p>
+        <p class="methodology-card__body lang-en" style="color:rgba(239,234,224,.9)">A change and deployment methodology for procurement organisations undergoing transformation. Integrates culture, process, structure and people into a single programme logic — ensuring changes land and stick at every level of the organisation.</p>
+        <p class="methodology-card__body lang-fr" style="color:rgba(239,234,224,.9)">Une méthodologie de conduite du changement pour les organisations achats en transformation. Elle intègre culture, processus, structure et personnes dans une logique de programme unifiée — pour que les changements s'ancrent durablement.</p>
       </div>
     </div>
   </div>
@@ -150,24 +166,25 @@
   <div class="container">
     <div class="grid-2" style="align-items:start;gap:clamp(40px,7vw,80px)">
       <div>
-        <div class="eyebrow">Sectors</div>
-        <h2 class="display-2">Where we operate.</h2>
-        <p class="body-lg mt-24" style="opacity:.82">We are sector-agnostic but procurement-specialist. Our clients range from global industrials to luxury groups, from financial services to public procurement bodies.</p>
+        <div class="eyebrow"><span class="lang-en">Sectors</span><span class="lang-fr">Secteurs</span></div>
+        <h2 class="display-2"><span class="lang-en">Where we operate.</span><span class="lang-fr">Nos secteurs d'intervention.</span></h2>
+        <p class="body-lg mt-24 lang-en" style="opacity:.82">We are sector-agnostic but procurement-specialist. Our clients range from global industrials to luxury groups, from financial services to public procurement bodies.</p>
+      <p class="body-lg mt-24 lang-fr" style="opacity:.82">Nous intervenons dans tous les secteurs mais restons spécialistes des achats. Nos clients vont des industriels mondiaux aux groupes de luxe, des services financiers aux organismes publics.</p>
       </div>
       <div>
         <div class="industries">
-          <span class="industry-tag">Aerospace &amp; Defence</span>
-          <span class="industry-tag">Automotive</span>
-          <span class="industry-tag">Energy &amp; Utilities</span>
-          <span class="industry-tag">Financial Services</span>
-          <span class="industry-tag">FMCG</span>
-          <span class="industry-tag">Healthcare &amp; Pharma</span>
-          <span class="industry-tag">Luxury &amp; Retail</span>
-          <span class="industry-tag">Public Sector</span>
-          <span class="industry-tag">Technology</span>
-          <span class="industry-tag">Transport &amp; Logistics</span>
-          <span class="industry-tag">Professional Services</span>
-          <span class="industry-tag">Industrial Manufacturing</span>
+          <span class="industry-tag lang-en">Aerospace &amp; Defence</span><span class="industry-tag lang-fr">Aérospatiale &amp; Défense</span>
+          <span class="industry-tag lang-en">Automotive</span><span class="industry-tag lang-fr">Automobile</span>
+          <span class="industry-tag lang-en">Energy &amp; Utilities</span><span class="industry-tag lang-fr">Énergie &amp; Services aux collectivités</span>
+          <span class="industry-tag lang-en">Financial Services</span><span class="industry-tag lang-fr">Services financiers</span>
+          <span class="industry-tag lang-en">FMCG</span><span class="industry-tag lang-fr">Grande consommation</span>
+          <span class="industry-tag lang-en">Healthcare &amp; Pharma</span><span class="industry-tag lang-fr">Santé &amp; Pharmacie</span>
+          <span class="industry-tag lang-en">Luxury &amp; Retail</span><span class="industry-tag lang-fr">Luxe &amp; Retail</span>
+          <span class="industry-tag lang-en">Public Sector</span><span class="industry-tag lang-fr">Secteur public</span>
+          <span class="industry-tag lang-en">Technology</span><span class="industry-tag lang-fr">Technologie</span>
+          <span class="industry-tag lang-en">Transport &amp; Logistics</span><span class="industry-tag lang-fr">Transport &amp; Logistique</span>
+          <span class="industry-tag lang-en">Professional Services</span><span class="industry-tag lang-fr">Services professionnels</span>
+          <span class="industry-tag lang-en">Industrial Manufacturing</span><span class="industry-tag lang-fr">Industrie manufacturière</span>
         </div>
       </div>
     </div>
@@ -178,12 +195,12 @@
 <section class="section section--ink">
   <div class="container cta-band">
     <div>
-      <div class="eyebrow" style="color:rgba(239,234,224,.5)">Get started</div>
-      <h2 class="display-3" style="color:var(--surface)">Every engagement begins with a diagnostic conversation.</h2>
+      <div class="eyebrow" style="color:rgba(239,234,224,.5)"><span class="lang-en">Get started</span><span class="lang-fr">Commencer</span></div>
+      <h2 class="display-3" style="color:var(--surface)"><span class="lang-en">Every engagement begins with a diagnostic conversation.</span><span class="lang-fr">Chaque mission commence par une conversation de diagnostic.</span></h2>
     </div>
     <div class="cta-band__btns">
-      <a href="contact.html" class="btn btn--filled">Book a call →</a>
-      <a href="work.html" class="btn btn--outline-light">See our work</a>
+      <a href="contact.html" class="btn btn--filled"><span class="lang-en">Book a call →</span><span class="lang-fr">Prendre RDV →</span></a>
+      <a href="work.html" class="btn btn--outline-light"><span class="lang-en">See our work</span><span class="lang-fr">Nos références</span></a>
     </div>
   </div>
 </section>
@@ -193,44 +210,49 @@
   <div class="container">
     <div class="footer__top">
       <div>
-        <div class="footer__logo" style="text-align:left;margin-left:0"><a href="index.html" style="display:inline-block"><img style="margin:0;display:block" src="assets/logo-sand.svg" alt="Big Fish" width="120" height="52"/></a></div>
+        <div class="footer__logo"><a href="index.html"><img src="assets/logo-sand.svg" alt="Big Fish" width="120" height="52"/></a></div>
         <p class="footer__desc">Paris, France<br/><br/>+33 1 45 62 19 80<br/>info@e-bigfish.com</p>
       </div>
       <div>
-        <div class="footer__heading">Practice</div>
+        <div class="footer__heading"><span class="lang-en">Practice</span><span class="lang-fr">Services</span></div>
         <ul class="footer__links">
-          <li><a href="services.html">Assessment</a></li>
-          <li><a href="services.html">Sourcing</a></li>
-          <li><a href="services.html">Development</a></li>
-          <li><a href="services.html">Deployment</a></li>
+          <li><a href="services.html"><span class="lang-en">Assessment</span><span class="lang-fr">Évaluation</span></a></li>
+          <li><a href="services.html"><span class="lang-en">Sourcing</span><span class="lang-fr">Sourcing</span></a></li>
+          <li><a href="services.html"><span class="lang-en">Development</span><span class="lang-fr">Développement</span></a></li>
+          <li><a href="services.html"><span class="lang-en">Deployment</span><span class="lang-fr">Déploiement</span></a></li>
         </ul>
       </div>
       <div>
-        <div class="footer__heading">Ecosystem</div>
+        <div class="footer__heading"><span class="lang-en">Ecosystem</span><span class="lang-fr">Écosystème</span></div>
         <ul class="footer__links">
-          <li><a href="about.html">Lab-B52k</a></li>
-          <li><a href="about.html">Federations</a></li>
-          <li><a href="about.html">Academic</a></li>
-          <li><a href="about.html">Research</a></li>
+          <li><a href="lab.html"><span class="lang-en">Lab-B52k</span><span class="lang-fr">Lab-B52k</span></a></li>
+          <li><a href="about.html"><span class="lang-en">Federations</span><span class="lang-fr">Fédérations</span></a></li>
+          <li><a href="about.html"><span class="lang-en">Academic</span><span class="lang-fr">Académique</span></a></li>
+          <li><a href="about.html"><span class="lang-en">Research</span><span class="lang-fr">Recherche</span></a></li>
         </ul>
       </div>
       <div>
-        <div class="footer__heading">Company</div>
+        <div class="footer__heading"><span class="lang-en">Company</span><span class="lang-fr">Entreprise</span></div>
         <ul class="footer__links">
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="contact.html">Careers</a></li>
+          <li><a href="about.html"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a></li>
+          <li><a href="work.html"><span class="lang-en">Work</span><span class="lang-fr">Références</span></a></li>
+          <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-fr">Contact</span></a></li>
+          <li><a href="contact.html"><span class="lang-en">Careers</span><span class="lang-fr">Carrières</span></a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
-      <span>© 2026 Big Fish International. All rights reserved.</span>
-      <span>People Centric Development</span>
+      <span><span class="lang-en">© 2026 Big Fish International. All rights reserved.</span><span class="lang-fr">© 2026 Big Fish International. Tous droits réservés.</span></span>
+      <span><span class="lang-en">People Centric Development</span><span class="lang-fr">Développement centré sur l'humain</span></span>
     </div>
   </div>
 </footer>
 
 <script src="script.js"></script>
+
+<script>
+function setLang(l){document.documentElement.setAttribute('data-lang',l);document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang')===l)});localStorage.setItem('bf-lang',l)}
+(function(){var s=localStorage.getItem('bf-lang')||'en';setLang(s)})();
+</script>
 </body>
 </html>

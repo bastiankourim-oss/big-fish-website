@@ -4,9 +4,9 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Contact Big Fish International — book a diagnostic call with our procurement advisory team."/>
-  <title>Contact — Big Fish International</title>
+  <title>Big Fish International | Contact</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
-  <link rel="stylesheet" href="styles.css?v=10"/>
+  <link rel="stylesheet" href="styles.css?v=16"/>
 </head>
 <body>
 
@@ -15,13 +15,19 @@
     <a class="nav__logo" href="index.html" aria-label="Big Fish International — Home">
       <img src="assets/logo.svg" alt="Big Fish" width="130" height="56"/>
     </a>
-    <div class="nav__links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="work.html">Work</a>
-      <a href="contact.html" class="active">Contact</a>
-      <a href="contact.html" class="btn btn--nav-cta">Book a call →</a>
+            <div class="nav__links">
+      <a href="index.html"><span class="lang-en">Home</span><span class="lang-fr">Accueil</span></a>
+      <a href="about.html"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a>
+      <a href="services.html"><span class="lang-en">Services</span><span class="lang-fr">Services</span></a>
+      <a href="work.html"><span class="lang-en">Work</span><span class="lang-fr">Références</span></a>
+      <a href="lab.html"><span class="lang-en">Lab-B52k</span><span class="lang-fr">Lab-B52k</span></a>
+      <a href="contact.html" class="active"><span class="lang-en">Contact</span><span class="lang-fr">Contact</span></a>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+        <span style="color:var(--mute);font-size:11px">/</span>
+        <button class="lang-btn" data-lang="fr" onclick="setLang('fr')">FR</button>
+      </div>
+      <a href="contact.html" class="btn btn--nav-cta"><span class="lang-en">Book a call →</span><span class="lang-fr">Prendre RDV →</span></a>
     </div>
     <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -29,78 +35,117 @@
   </div>
 </nav>
 <nav class="nav__mobile" aria-label="Mobile menu">
-  <a href="about.html">About</a>
+  <a href="index.html"><span class="lang-en">Home</span><span class="lang-fr">Accueil</span></a>
+  <a href="about.html"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a>
   <a href="services.html">Services</a>
-  <a href="work.html">Work</a>
+  <a href="work.html"><span class="lang-en">Work</span><span class="lang-fr">Références</span></a>
+  <a href="lab.html">Lab-B52k</a>
   <a href="contact.html">Contact</a>
-  <a href="contact.html" class="btn btn--filled">Book a call →</a>
+  <a href="contact.html" class="btn btn--filled"><span class="lang-en">Book a call →</span><span class="lang-fr">Prendre RDV →</span></a>
 </nav>
 
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <div class="page-hero__eyebrow eyebrow">Get in touch</div>
-    <h1 class="display-1">Every engagement starts with a conversation.</h1>
-    <p class="page-hero__sub">Tell us about your procurement challenge. We will respond within 24 hours.</p>
+    <div class="page-hero__eyebrow eyebrow"><span class="lang-en">Get in touch</span><span class="lang-fr">Nous contacter</span></div>
+    <h1 class="display-1"><span class="lang-en">Every engagement starts with a conversation.</span><span class="lang-fr">Chaque collaboration commence par une conversation.</span></h1>
+    <p class="page-hero__sub lang-en">Tell us about your procurement challenge. We will respond within 24 hours.</p>
+    <p class="page-hero__sub lang-fr">Parlez-nous de votre défi achats. Nous vous répondons sous 24 heures.</p>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section class="section">
   <div class="container">
-    <div style="display:flex;align-items:center;gap:clamp(24px,4vw,56px);flex-wrap:wrap;justify-content:center">
-      <a href="tel:+33145621980" class="display-2" style="font-size:clamp(24px,3.5vw,52px);letter-spacing:-.02em;color:var(--ink)">+33 1 45 62 19 80</a>
-      <span style="width:14px;height:14px;border-radius:50%;background:var(--accent);display:inline-block;flex-shrink:0"></span>
-      <a href="mailto:info@e-bigfish.com" class="display-2" style="font-size:clamp(24px,3.5vw,52px);letter-spacing:-.02em;color:var(--ink)">info@e-bigfish.com</a>
+    <div style="max-width:560px">
+      <p class="body-lg lang-en" style="opacity:.82;margin-bottom:40px">We’d love to hear about your procurement challenge. Reach out directly — we respond within 24 hours.</p>
+      <p class="body-lg lang-fr" style="opacity:.82;margin-bottom:40px">Votre défi achats nous intéresse. Contactez-nous directement — nous répondons sous 24 heures.</p>
+      <div style="display:flex;flex-direction:column;gap:0">
+        <div class="contact-info__item">
+          <span class="mono mute"><span class="lang-en">Phone</span><span class="lang-fr">Téléphone</span></span>
+          <a href="tel:+33145621980" class="body" style="transition:font-weight .1s" onmouseover="this.style.fontWeight='700'" onmouseout="this.style.fontWeight='400'">+33 1 45 62 19 80</a>
+        </div>
+        <div class="contact-info__item">
+          <span class="mono mute">Email</span>
+          <span style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+            <a href="mailto:info@e-bigfish.com" class="body" style="transition:font-weight .1s" onmouseover="this.style.fontWeight='700'" onmouseout="this.style.fontWeight='400'">info@e-bigfish.com</a>
+            <button onclick="copyEmail()" style="font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);background:none;border:1px solid var(--line-med);padding:4px 10px;cursor:pointer;transition:color .2s,border-color .2s" onmouseover="this.style.color='var(--ink)';this.style.borderColor='var(--ink)'" onmouseout="this.style.color='var(--mute)';this.style.borderColor='var(--line-med)'">
+              <span class="lang-en">Copy</span><span class="lang-fr">Copier</span>
+            </button>
+          </span>
+        </div>
+        <div class="contact-info__item" style="border-bottom:none">
+          <span class="mono mute">LinkedIn</span>
+          <a href="https://www.linkedin.com/company/big-fish/?originalSubdomain=fr" target="_blank" rel="noopener" class="body" style="display:inline-flex;align-items:center;gap:6px;transition:font-weight .1s" onmouseover="this.style.fontWeight='700'" onmouseout="this.style.fontWeight='400'">Big Fish International <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="opacity:.5"><path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-
+<!-- CLIPBOARD TOAST -->
+<div id="email-toast" style="position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--ink);color:var(--surface);padding:14px 28px;font-size:14px;font-weight:500;opacity:0;transition:opacity .3s,transform .3s;z-index:200;pointer-events:none;white-space:nowrap">
+  <span class="lang-en">✓ Copied to clipboard</span><span class="lang-fr">✓ Copié dans le presse-papiers</span>
+</div>
+<script>
+function copyEmail(){
+  var email='info@e-bigfish.com';
+  function showToast(){var t=document.getElementById('email-toast');t.style.opacity='1';t.style.transform='translateX(-50%) translateY(0)';setTimeout(function(){t.style.opacity='0';t.style.transform='translateX(-50%) translateY(80px)'},2800);}
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(email).then(showToast).catch(function(){fallback();});
+  } else { fallback(); }
+  function fallback(){var ta=document.createElement('textarea');ta.value=email;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.focus();ta.select();try{document.execCommand('copy');showToast();}catch(e){}document.body.removeChild(ta);}
+}
+</script>
 
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer__top">
       <div>
-        <div class="footer__logo" style="text-align:left;margin-left:0"><a href="index.html" style="display:inline-block"><img style="margin:0;display:block" src="assets/logo-sand.svg" alt="Big Fish" width="120" height="52"/></a></div>
+        <div class="footer__logo"><a href="index.html"><img src="assets/logo-sand.svg" alt="Big Fish" width="120" height="52"/></a></div>
         <p class="footer__desc">Paris, France<br/><br/>+33 1 45 62 19 80<br/>info@e-bigfish.com</p>
       </div>
       <div>
-        <div class="footer__heading">Practice</div>
+        <div class="footer__heading"><span class="lang-en">Practice</span><span class="lang-fr">Services</span></div>
         <ul class="footer__links">
-          <li><a href="services.html">Assessment</a></li>
-          <li><a href="services.html">Sourcing</a></li>
-          <li><a href="services.html">Development</a></li>
-          <li><a href="services.html">Deployment</a></li>
+          <li><a href="services.html"><span class="lang-en">Assessment</span><span class="lang-fr">Évaluation</span></a></li>
+          <li><a href="services.html"><span class="lang-en">Sourcing</span><span class="lang-fr">Sourcing</span></a></li>
+          <li><a href="services.html"><span class="lang-en">Development</span><span class="lang-fr">Développement</span></a></li>
+          <li><a href="services.html"><span class="lang-en">Deployment</span><span class="lang-fr">Déploiement</span></a></li>
         </ul>
       </div>
       <div>
-        <div class="footer__heading">Ecosystem</div>
+        <div class="footer__heading"><span class="lang-en">Ecosystem</span><span class="lang-fr">Écosystème</span></div>
         <ul class="footer__links">
-          <li><a href="about.html">Lab-B52k</a></li>
-          <li><a href="about.html">Federations</a></li>
-          <li><a href="about.html">Academic</a></li>
-          <li><a href="about.html">Research</a></li>
+          <li><a href="lab.html"><span class="lang-en">Lab-B52k</span><span class="lang-fr">Lab-B52k</span></a></li>
+          <li><a href="about.html"><span class="lang-en">Federations</span><span class="lang-fr">Fédérations</span></a></li>
+          <li><a href="about.html"><span class="lang-en">Academic</span><span class="lang-fr">Académique</span></a></li>
+          <li><a href="about.html"><span class="lang-en">Research</span><span class="lang-fr">Recherche</span></a></li>
         </ul>
       </div>
       <div>
-        <div class="footer__heading">Company</div>
+        <div class="footer__heading"><span class="lang-en">Company</span><span class="lang-fr">Entreprise</span></div>
         <ul class="footer__links">
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="contact.html">Careers</a></li>
+          <li><a href="about.html"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a></li>
+          <li><a href="work.html"><span class="lang-en">Work</span><span class="lang-fr">Références</span></a></li>
+          <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-fr">Contact</span></a></li>
+          <li><a href="contact.html"><span class="lang-en">Careers</span><span class="lang-fr">Carrières</span></a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
       <span>© 2026 Big Fish International. All rights reserved.</span>
-      <span>People Centric Development</span>
+      <span><span class="lang-en">People Centric Development</span><span class="lang-fr">Développement centré sur l'humain</span></span>
     </div>
   </div>
 </footer>
 
 <script src="script.js"></script>
+
+<script>
+function setLang(l){document.documentElement.setAttribute('data-lang',l);document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang')===l)});localStorage.setItem('bf-lang',l)}
+(function(){var s=localStorage.getItem('bf-lang')||'en';setLang(s)})();
+</script>
 </body>
 </html>

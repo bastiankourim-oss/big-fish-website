@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Big Fish International — People Centric procurement and HR development. Advising CPOs at CAC 40 and Fortune 500 since 1999."/>
-  <title>Big Fish International — People Centric Development</title>
+  <meta name="description" content="Big Fish International — People Centric procurement and HR development. Advising CPOs at CAC 40 and leading European groups since 1999."/>
+  <title>Big Fish International | Procurement Advisory</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
-  <link rel="stylesheet" href="styles.css?v=10"/>
+  <link rel="stylesheet" href="styles.css?v=16"/>
 </head>
 <body>
 
@@ -16,13 +16,19 @@
     <a class="nav__logo" href="index.html" aria-label="Big Fish International — Home">
       <img src="assets/logo.svg" alt="Big Fish" width="130" height="56"/>
     </a>
-    <div class="nav__links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="work.html">Work</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn btn--nav-cta">Book a call →</a>
+            <div class="nav__links">
+      <a href="index.html" class="active"><span class="lang-en">Home</span><span class="lang-fr">Accueil</span></a>
+      <a href="about.html"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a>
+      <a href="services.html"><span class="lang-en">Services</span><span class="lang-fr">Services</span></a>
+      <a href="work.html"><span class="lang-en">Work</span><span class="lang-fr">Références</span></a>
+      <a href="lab.html"><span class="lang-en">Lab-B52k</span><span class="lang-fr">Lab-B52k</span></a>
+      <a href="contact.html"><span class="lang-en">Contact</span><span class="lang-fr">Contact</span></a>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+        <span style="color:var(--mute);font-size:11px">/</span>
+        <button class="lang-btn" data-lang="fr" onclick="setLang('fr')">FR</button>
+      </div>
+      <a href="contact.html" class="btn btn--nav-cta"><span class="lang-en">Book a call →</span><span class="lang-fr">Prendre RDV →</span></a>
     </div>
     <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -30,22 +36,25 @@
   </div>
 </nav>
 <nav class="nav__mobile" aria-label="Mobile menu">
-  <a href="about.html">About</a>
+  <a href="index.html"><span class="lang-en">Home</span><span class="lang-fr">Accueil</span></a>
+  <a href="about.html"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a>
   <a href="services.html">Services</a>
-  <a href="work.html">Work</a>
+  <a href="work.html"><span class="lang-en">Work</span><span class="lang-fr">Références</span></a>
+  <a href="lab.html">Lab-B52k</a>
   <a href="contact.html">Contact</a>
-  <a href="contact.html" class="btn btn--filled">Book a call →</a>
+  <a href="contact.html" class="btn btn--filled"><span class="lang-en">Book a call →</span><span class="lang-fr">Prendre RDV →</span></a>
 </nav>
 
 <!-- HERO -->
 <section class="page-hero">
   <div class="container">
-    <div class="page-hero__eyebrow eyebrow">Since 1999 &nbsp;·&nbsp; People Centric Development</div>
-    <h1 class="display-1">Procurement teams that create measurable value.</h1>
-    <p class="page-hero__sub">An independent Franco-European cabinet advising CPOs on talent, teams, and transformation across 40+ countries and nine languages.</p>
+    <div class="page-hero__eyebrow eyebrow"><span class="lang-en">Since 1999 &nbsp;·&nbsp; People Centric Development</span><span class="lang-fr">Depuis 1999 &nbsp;·&nbsp; Développement centré sur l'humain</span></div>
+    <h1 class="display-1"><span class="lang-en">Procurement teams that create measurable value.</span><span class="lang-fr">Des équipes achats qui créent de la valeur mesurable.</span></h1>
+    <p class="page-hero__sub lang-en">An independent Franco-European cabinet advising CPOs on talent, teams, and transformation across 40+ countries.</p>
+    <p class="page-hero__sub lang-fr">Un cabinet franco-européen indépendant conseillant les CPOs sur les talents, les équipes et la transformation dans plus de 40 pays.</p>
     <div class="hero__ctas">
-      <a href="contact.html" class="btn btn--filled">Book a diagnostic →</a>
-      <a href="services.html" class="btn">Explore our method</a>
+      <a href="contact.html" class="btn btn--filled"><span class="lang-en">Book a diagnostic →</span><span class="lang-fr">Prendre RDV →</span></a>
+      <a href="services.html" class="btn"><span class="lang-en">Explore our method</span><span class="lang-fr">Notre méthode</span></a>
     </div>
   </div>
 </section>
@@ -56,19 +65,19 @@
     <div class="stats__grid">
       <div class="stats__item">
         <div class="stats__num">300<span class="accent-dot">+</span></div>
-        <div class="stats__label">Enterprises advised across 40+ countries</div>
+        <div class="stats__label"><span class="lang-en">Enterprises advised across 40+ countries</span><span class="lang-fr">Entreprises conseillées dans plus de 40 pays</span></div>
       </div>
       <div class="stats__item">
         <div class="stats__num">52k</div>
-        <div class="stats__label">Active procurement professionals in our network</div>
+        <div class="stats__label"><span class="lang-en">Active procurement professionals in our network</span><span class="lang-fr">Professionnels achats actifs dans notre réseau</span></div>
       </div>
       <div class="stats__item">
         <div class="stats__num">47</div>
-        <div class="stats__label">Procurement federations partnered globally</div>
+        <div class="stats__label"><span class="lang-en">Procurement federations partnered globally</span><span class="lang-fr">Fédérations achats partenaires dans le monde</span></div>
       </div>
       <div class="stats__item">
         <div class="stats__num">20<span class="accent-dot">y</span></div>
-        <div class="stats__label">At the edge of procurement performance</div>
+        <div class="stats__label"><span class="lang-en">At the edge of procurement performance</span><span class="lang-fr">À la pointe de la performance achats</span></div>
       </div>
     </div>
   </div>
@@ -79,28 +88,30 @@
   <div class="container">
     <div class="convictions__intro">
       <div>
-        <div class="eyebrow">Three convictions</div>
-        <h2 class="display-2">Why CPOs at CAC 40 and Fortune 500 choose us.</h2>
+        <div class="eyebrow"><span class="lang-en">Three convictions</span><span class="lang-fr">Trois convictions</span></div>
+        <h2 class="display-2"><span class="lang-en">Why CPOs at CAC 40 and leading European groups choose us.</span><span class="lang-fr">Pourquoi les CPO du CAC 40 et des grands groupes européens nous choisissent.</span></h2>
       </div>
-      <p class="body-lg" style="opacity:.82;align-self:end;">
-        Durable procurement performance cannot be decreed. It is built with the people who deliver it — team by team, country by country.
-      </p>
+      <p class="body-lg lang-en" style="opacity:.82;align-self:end;">Durable procurement performance cannot be decreed. It is built with the people who deliver it — team by team, country by country.</p>
+      <p class="body-lg lang-fr" style="opacity:.82;align-self:end;">La performance achats durable ne se décrète pas. Elle se construit avec les personnes qui la délivrent — équipe par équipe, pays par pays.</p>
     </div>
     <div class="grid-3">
       <div class="grid-cell card">
         <div class="card__num">01</div>
-        <div class="card__title">Exclusive expertise</div>
-        <p class="card__body">Procurement and HR only. Since 1999. Our CRI, SRI and TOSCA frameworks are recognised by procurement leaders across 40+ countries.</p>
+        <div class="card__title"><span class="lang-en">Exclusive expertise</span><span class="lang-fr">Expertise exclusive</span></div>
+        <p class="card__body lang-en">Procurement and HR only. Since 1999. Our CRI, SRI and TOSCA frameworks are recognised by procurement leaders across 40+ countries.</p>
+        <p class="card__body lang-fr">Achats et RH uniquement. Depuis 1999. Nos frameworks CRI, SRI et TOSCA sont reconnus par les dirigeants achats dans plus de 40 pays.</p>
       </div>
       <div class="grid-cell card">
         <div class="card__num">02</div>
-        <div class="card__title">People centric</div>
-        <p class="card__body">Durable performance is not decreed. It is built with the team that executes it. Every engagement puts people at the centre of transformation.</p>
+        <div class="card__title"><span class="lang-en">People centric</span><span class="lang-fr">Centré sur l'humain</span></div>
+        <p class="card__body lang-en">Durable performance is not decreed. It is built with the team that executes it. Every engagement puts people at the centre of transformation.</p>
+        <p class="card__body lang-fr">La performance durable ne se décrète pas. Elle se construit avec l'équipe qui l'incarne. Chaque mission place les femmes et les hommes au cœur de la transformation.</p>
       </div>
       <div class="grid-cell card">
         <div class="card__num">03</div>
-        <div class="card__title">Global, locally</div>
-        <p class="card__body">Nine languages. Forty countries. Local partners who speak the language — literally and figuratively. No parachute consulting.</p>
+        <div class="card__title"><span class="lang-en">Global, locally</span><span class="lang-fr">Global, localement</span></div>
+        <p class="card__body lang-en">Nine languages. Forty countries. Local partners who speak the language — literally and figuratively. No parachute consulting.</p>
+        <p class="card__body lang-fr">Neuf langues. Quarante pays. Des partenaires locaux qui parlent la langue — au sens propre comme au sens figuré. Zéro consulting parachute.</p>
       </div>
     </div>
   </div>
@@ -109,33 +120,32 @@
 <!-- ECOSYSTEM -->
 <section class="section section--dark">
   <div class="container">
-    <div class="grid-2" style="align-items:start;gap:clamp(40px,8vw,96px)">
+    <div class="grid-2" style="align-items:center;gap:clamp(40px,8vw,96px)">
       <div>
-        <div class="eyebrow">The ecosystem</div>
-        <h2 class="display-2">The bubbles became a system.</h2>
-        <p class="body-lg mt-32 max-56" style="opacity:.82">
-          Our original mark was a rising fish releasing bubbles. Twenty years later those bubbles are federations, schools, research networks, and 52 000 practitioners. Each node visible. Each connection intentional.
-        </p>
+        <div class="eyebrow"><span class="lang-en">The ecosystem</span><span class="lang-fr">L'écosystème</span></div>
+        <h2 class="display-2"><span class="lang-en">The bubbles became a system.</span><span class="lang-fr">Les bulles sont devenues un système.</span></h2>
+        <p class="body-lg mt-32 max-56 lang-en" style="opacity:.82">Our original mark was a rising fish releasing bubbles. Twenty years later those bubbles are federations, schools, research networks, and 52 000 practitioners. Each node visible. Each connection intentional.</p>
+        <p class="body-lg mt-32 max-56 lang-fr" style="opacity:.82">Notre logo original représentait un poisson libérant des bulles. Vingt ans plus tard, ces bulles sont des fédérations, des écoles, des réseaux de recherche et 52 000 praticiens. Chaque nœud visible. Chaque connexion intentionnelle.</p>
         <div class="mt-48">
-          <a href="about.html" class="btn btn--outline-light">Learn about Big Fish →</a>
+          <a href="about.html" class="btn btn--outline-light"><span class="lang-en">Learn about Big Fish →</span><span class="lang-fr">Découvrir Big Fish →</span></a>
         </div>
       </div>
       <div>
         <div class="contact-info__item" style="padding:20px 0;border-bottom:1px solid rgba(239,234,224,.14);display:grid;grid-template-columns:140px 1fr;gap:16px;align-items:baseline">
-          <span class="mono" style="color:rgba(239,234,224,.5)">Federations</span>
-          <span class="body-sm" style="color:rgba(239,234,224,.85)">47+ partners — CIPS, ISM, IFPSM, CNA, BME, NEVI</span>
+          <span class="mono" style="color:rgba(239,234,224,.5)"><span class="lang-en">Federations</span><span class="lang-fr">Fédérations</span></span>
+          <span class="body-sm" style="color:rgba(239,234,224,.85)"><span class="lang-en">47+ partners — CIPS, ISM, IFPSM, CNA, BME, NEVI</span><span class="lang-fr">47+ partenaires — CIPS, ISM, IFPSM, CNA, BME, NEVI</span></span>
         </div>
         <div class="contact-info__item" style="padding:20px 0;border-bottom:1px solid rgba(239,234,224,.14);display:grid;grid-template-columns:140px 1fr;gap:16px;align-items:baseline">
-          <span class="mono" style="color:rgba(239,234,224,.5)">Network</span>
-          <span class="body-sm" style="color:rgba(239,234,224,.85)">52 000+ active procurement professionals</span>
+          <span class="mono" style="color:rgba(239,234,224,.5)"><span class="lang-en">Network</span><span class="lang-fr">Réseau</span></span>
+          <span class="body-sm" style="color:rgba(239,234,224,.85)"><span class="lang-en">52 000+ active procurement professionals</span><span class="lang-fr">52 000+ professionnels achats actifs</span></span>
         </div>
         <div class="contact-info__item" style="padding:20px 0;border-bottom:1px solid rgba(239,234,224,.14);display:grid;grid-template-columns:140px 1fr;gap:16px;align-items:baseline">
-          <span class="mono" style="color:rgba(239,234,224,.5)">References</span>
-          <span class="body-sm" style="color:rgba(239,234,224,.85)">300+ corporates, ETIs and public bodies</span>
+          <span class="mono" style="color:rgba(239,234,224,.5)"><span class="lang-en">References</span><span class="lang-fr">Références</span></span>
+          <span class="body-sm" style="color:rgba(239,234,224,.85)"><span class="lang-en">300+ corporates, ETIs and public bodies</span><span class="lang-fr">300+ grandes entreprises, ETI et organismes publics</span></span>
         </div>
         <div class="contact-info__item" style="padding:20px 0;display:grid;grid-template-columns:140px 1fr;gap:16px;align-items:baseline">
-          <span class="mono" style="color:rgba(239,234,224,.5)">Research</span>
-          <span class="body-sm" style="color:rgba(239,234,224,.85)">IPSERA · Excellence HA editorial board member</span>
+          <span class="mono" style="color:rgba(239,234,224,.5)"><span class="lang-en">Research</span><span class="lang-fr">Recherche</span></span>
+          <span class="body-sm" style="color:rgba(239,234,224,.85)"><span class="lang-en">IPSERA · Excellence HA editorial board member</span><span class="lang-fr">IPSERA · Membre du comité éditorial Excellence HA</span></span>
         </div>
       </div>
     </div>
@@ -146,8 +156,9 @@
 <section class="section">
   <div class="container">
     <div class="quote__wrap">
-      <p class="quote__text">They helped us restructure and professionalize our procurement function in record time. The People Centric approach is the difference.</p>
-      <div class="quote__attr">— Chief Procurement Officer &nbsp;·&nbsp; European Industrial Group &nbsp;·&nbsp; CAC 40</div>
+      <p class="quote__text lang-en">They helped us restructure and professionalize our procurement function in record time. The People Centric approach is the difference.</p>
+      <p class="quote__text lang-fr">Ils nous ont aidés à restructurer et professionnaliser notre direction achats en un temps record. L'approche People Centric fait toute la différence.</p>
+      <div class="quote__attr"><span class="lang-en">— Chief Procurement Officer &nbsp;·&nbsp; European Industrial Group &nbsp;·&nbsp; CAC 40</span><span class="lang-fr">— Directeur des Achats &nbsp;·&nbsp; Groupe industriel européen &nbsp;·&nbsp; CAC 40</span></div>
     </div>
   </div>
 </section>
@@ -156,12 +167,12 @@
 <section class="section section--ink" style="border-top:none">
   <div class="container cta-band" style="padding-top:0;padding-bottom:0">
     <div>
-      <div class="eyebrow" style="color:rgba(239,234,224,.5)">Ready to start</div>
-      <h2 class="display-3" style="color:var(--surface)">Let's build procurement performance together.</h2>
+      <div class="eyebrow" style="color:rgba(239,234,224,.5)"><span class="lang-en">Ready to start</span><span class="lang-fr">Prêt à démarrer</span></div>
+      <h2 class="display-3" style="color:var(--surface)"><span class="lang-en">Let's build procurement performance together.</span><span class="lang-fr">Construisons ensemble la performance achats.</span></h2>
     </div>
     <div class="cta-band__btns">
-      <a href="contact.html" class="btn btn--filled">Book a diagnostic call →</a>
-      <a href="services.html" class="btn btn--outline-light">See our services</a>
+      <a href="contact.html" class="btn btn--filled"><span class="lang-en">Book a diagnostic call →</span><span class="lang-fr">Prendre RDV →</span></a>
+      <a href="services.html" class="btn btn--outline-light"><span class="lang-en">See our services</span><span class="lang-fr">Voir nos services</span></a>
     </div>
   </div>
 </section>
@@ -171,46 +182,49 @@
   <div class="container">
     <div class="footer__top">
       <div>
-        <div class="footer__logo" style="text-align:left;margin-left:0">
-          <a href="index.html" style="display:inline-block"><img style="margin:0;display:block" src="assets/logo-sand.svg" alt="Big Fish" width="120" height="52"/></a>
-        </div>
+        <div class="footer__logo"><a href="index.html"><img src="assets/logo-sand.svg" alt="Big Fish" width="120" height="52"/></a></div>
         <p class="footer__desc">Paris, France<br/><br/>+33 1 45 62 19 80<br/>info@e-bigfish.com</p>
       </div>
       <div>
-        <div class="footer__heading">Practice</div>
+        <div class="footer__heading"><span class="lang-en">Practice</span><span class="lang-fr">Services</span></div>
         <ul class="footer__links">
-          <li><a href="services.html">Assessment</a></li>
-          <li><a href="services.html">Sourcing</a></li>
-          <li><a href="services.html">Development</a></li>
-          <li><a href="services.html">Deployment</a></li>
+          <li><a href="services.html"><span class="lang-en">Assessment</span><span class="lang-fr">Évaluation</span></a></li>
+          <li><a href="services.html"><span class="lang-en">Sourcing</span><span class="lang-fr">Sourcing</span></a></li>
+          <li><a href="services.html"><span class="lang-en">Development</span><span class="lang-fr">Développement</span></a></li>
+          <li><a href="services.html"><span class="lang-en">Deployment</span><span class="lang-fr">Déploiement</span></a></li>
         </ul>
       </div>
       <div>
-        <div class="footer__heading">Ecosystem</div>
+        <div class="footer__heading"><span class="lang-en">Ecosystem</span><span class="lang-fr">Écosystème</span></div>
         <ul class="footer__links">
-          <li><a href="about.html">Lab-B52k</a></li>
-          <li><a href="about.html">Federations</a></li>
-          <li><a href="about.html">Academic</a></li>
-          <li><a href="about.html">Research</a></li>
+          <li><a href="lab.html"><span class="lang-en">Lab-B52k</span><span class="lang-fr">Lab-B52k</span></a></li>
+          <li><a href="about.html"><span class="lang-en">Federations</span><span class="lang-fr">Fédérations</span></a></li>
+          <li><a href="about.html"><span class="lang-en">Academic</span><span class="lang-fr">Académique</span></a></li>
+          <li><a href="about.html"><span class="lang-en">Research</span><span class="lang-fr">Recherche</span></a></li>
         </ul>
       </div>
       <div>
-        <div class="footer__heading">Company</div>
+        <div class="footer__heading"><span class="lang-en">Company</span><span class="lang-fr">Entreprise</span></div>
         <ul class="footer__links">
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="contact.html">Careers</a></li>
+          <li><a href="about.html"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a></li>
+          <li><a href="work.html"><span class="lang-en">Work</span><span class="lang-fr">Références</span></a></li>
+          <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-fr">Contact</span></a></li>
+          <li><a href="contact.html"><span class="lang-en">Careers</span><span class="lang-fr">Carrières</span></a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
-      <span>© 2026 Big Fish International. All rights reserved.</span>
-      <span>People Centric Development</span>
+      <span><span class="lang-en">© 2026 Big Fish International. All rights reserved.</span><span class="lang-fr">© 2026 Big Fish International. Tous droits réservés.</span></span>
+      <span><span class="lang-en">People Centric Development</span><span class="lang-fr">Développement centré sur l'humain</span></span>
     </div>
   </div>
 </footer>
 
 <script src="script.js"></script>
+
+<script>
+function setLang(l){document.documentElement.setAttribute('data-lang',l);document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang')===l)});localStorage.setItem('bf-lang',l)}
+(function(){var s=localStorage.getItem('bf-lang')||'en';setLang(s)})();
+</script>
 </body>
 </html>

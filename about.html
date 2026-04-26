@@ -4,9 +4,9 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="About Big Fish International — a people-centric procurement and HR cabinet since 1999."/>
-  <title>About — Big Fish International</title>
+  <title>Big Fish International | About</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
-  <link rel="stylesheet" href="styles.css?v=10"/>
+  <link rel="stylesheet" href="styles.css?v=16"/>
 </head>
 <body>
 
@@ -15,13 +15,19 @@
     <a class="nav__logo" href="index.html" aria-label="Big Fish International — Home">
       <img src="assets/logo.svg" alt="Big Fish" width="130" height="56"/>
     </a>
-    <div class="nav__links">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="services.html">Services</a>
-      <a href="work.html">Work</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn btn--nav-cta">Book a call →</a>
+            <div class="nav__links">
+      <a href="index.html"><span class="lang-en">Home</span><span class="lang-fr">Accueil</span></a>
+      <a href="about.html" class="active"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a>
+      <a href="services.html"><span class="lang-en">Services</span><span class="lang-fr">Services</span></a>
+      <a href="work.html"><span class="lang-en">Work</span><span class="lang-fr">Références</span></a>
+      <a href="lab.html"><span class="lang-en">Lab-B52k</span><span class="lang-fr">Lab-B52k</span></a>
+      <a href="contact.html"><span class="lang-en">Contact</span><span class="lang-fr">Contact</span></a>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+        <span style="color:var(--mute);font-size:11px">/</span>
+        <button class="lang-btn" data-lang="fr" onclick="setLang('fr')">FR</button>
+      </div>
+      <a href="contact.html" class="btn btn--nav-cta"><span class="lang-en">Book a call →</span><span class="lang-fr">Prendre RDV →</span></a>
     </div>
     <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -29,19 +35,22 @@
   </div>
 </nav>
 <nav class="nav__mobile" aria-label="Mobile menu">
-  <a href="about.html">About</a>
+  <a href="index.html"><span class="lang-en">Home</span><span class="lang-fr">Accueil</span></a>
+  <a href="about.html"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a>
   <a href="services.html">Services</a>
-  <a href="work.html">Work</a>
+  <a href="work.html"><span class="lang-en">Work</span><span class="lang-fr">Références</span></a>
+  <a href="lab.html">Lab-B52k</a>
   <a href="contact.html">Contact</a>
-  <a href="contact.html" class="btn btn--filled">Book a call →</a>
+  <a href="contact.html" class="btn btn--filled"><span class="lang-en">Book a call →</span><span class="lang-fr">Prendre RDV →</span></a>
 </nav>
 
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <div class="page-hero__eyebrow eyebrow">About Big Fish International</div>
-    <h1 class="display-1">People Centric.<br/>Since 1999.</h1>
-    <p class="page-hero__sub">An independent Franco-European cabinet built on one conviction: durable procurement performance is built with the people who deliver it, not around them.</p>
+    <div class="page-hero__eyebrow eyebrow"><span class="lang-en">About Big Fish International</span><span class="lang-fr">À propos de Big Fish International</span></div>
+    <h1 class="display-1"><span class="lang-en">People Centric.<br/>Since 1999.</span><span class="lang-fr">Centré sur l'humain.<br/>Depuis 1999.</span></h1>
+    <p class="page-hero__sub lang-en">An independent Franco-European cabinet built on one conviction: durable procurement performance is built with the people who deliver it, not around them.</p>
+    <p class="page-hero__sub lang-fr">Un cabinet franco-européen indépendant fondé sur une conviction : la performance achats durable se construit avec les personnes qui la délivrent, et non autour d'elles.</p>
   </div>
 </section>
 
@@ -50,12 +59,14 @@
   <div class="container">
     <div class="grid-2" style="align-items:start;gap:clamp(40px,7vw,96px)">
       <div>
-        <div class="eyebrow">Our story</div>
-        <h2 class="display-2">Twenty years of substance.</h2>
+        <div class="eyebrow"><span class="lang-en">Our story</span><span class="lang-fr">Notre histoire</span></div>
+        <h2 class="display-2"><span class="lang-en">Twenty years of substance.</span><span class="lang-fr">Vingt ans de substance.</span></h2>
       </div>
       <div>
-        <p class="body-lg" style="opacity:.85">Big Fish International was founded on a simple observation: most procurement transformations fail not because of flawed strategy, but because of flawed implementation by underprepared people.</p>
-        <p class="body mt-24" style="opacity:.8">Over two decades we have built proprietary frameworks — CRI, SRI, TOSCA — that assess, source, develop and deploy procurement talent with rigour and human intelligence. We work with fewer clients, more deeply. We measure outcomes, not activity.</p>
+        <p class="body-lg lang-en" style="opacity:.85">Big Fish International was founded on a simple observation: most procurement transformations fail not because of flawed strategy, but because of flawed implementation by underprepared people.</p>
+        <p class="body-lg lang-fr" style="opacity:.85">Big Fish International est né d'un constat simple : la plupart des transformations achats échouent non pas à cause d'une stratégie défaillante, mais d'une exécution insuffisamment préparée.</p>
+        <p class="body mt-24 lang-en" style="opacity:.8">Over two decades we have built proprietary frameworks — CRI, SRI, TOSCA — that assess, source, develop and deploy procurement talent with rigour and human intelligence. We work with fewer clients, more deeply. We measure outcomes, not activity.</p>
+        <p class="body mt-24 lang-fr" style="opacity:.8">En deux décennies, nous avons construit des frameworks propriétaires — CRI, SRI, TOSCA — qui évaluent, sourcent, développent et déploient les talents achats avec rigueur et intelligence humaine. Moins de clients, mais davantage de profondeur. Des résultats mesurés, jamais de l'activité pour l'activité.</p>
         <p class="body mt-16" style="opacity:.8">Today our network spans 52 000 procurement professionals, 47 federations, and academic partnerships on three continents. The substance is not the problem. It never was.</p>
       </div>
     </div>
@@ -70,16 +81,18 @@
         <span class="placeholder__label">Portrait<br/>Nicolas Kourim<br/>Founder &amp; Managing Partner</span>
       </div>
       <div>
-        <div class="eyebrow">Founder</div>
+        <div class="eyebrow"><span class="lang-en">Founder</span><span class="lang-fr">Fondateur</span></div>
         <h2 class="display-2">Nicolas Kourim</h2>
-        <p class="body-lg mt-24" style="color:var(--surface);opacity:.85">
+        <p class="body-lg mt-24 lang-en" style="color:var(--surface);opacity:.85">
           After twenty years at the intersection of procurement strategy, talent development and international management, Nicolas founded Big Fish International to give senior procurement leaders the independent, people-first advisory they had been missing.
         </p>
-        <p class="body mt-16" style="color:var(--surface);opacity:.72">
-          He holds a background in supply chain and international management, and has advised CPOs across the CAC 40, MDAX, AEX and Fortune 500. He is a regular speaker at CIPS, ISM and European procurement federation events.
+        <p class="body-lg mt-24 lang-fr" style="color:var(--surface);opacity:.85">Après vingt ans à l'intersection de la stratégie achats, du développement des talents et du management international, Nicolas a fondé Big Fish International pour offrir aux directions achats un conseil indépendant, ancré dans l'humain, qu'elles ne trouvaient nulle part ailleurs.</p>
+        <p class="body mt-16 lang-en" style="color:var(--surface);opacity:.72">
+          He holds a background in supply chain and international management, and has advised CPOs across the CAC 40, MDAX and AEX. He is a regular speaker at CIPS, ISM and European procurement federation events.
         </p>
+        <p class="body mt-16 lang-fr" style="color:var(--surface);opacity:.72">Diplômé en supply chain et management international, il conseille les CPO du CAC 40, du MDAX et de l'AEX. Intervenant régulier au CIPS, à l'ISM et dans les fédérations européennes d'achats.</p>
         <div class="mt-32">
-          <a href="https://www.linkedin.com/in/claus-nicolas-kourim-742684/" target="_blank" rel="noopener" class="btn btn--outline-light">View LinkedIn profile →</a>
+          <a href="https://www.linkedin.com/in/ACoAAAAZbyIByF38w97Mfj_TUovsyDaeQEpF96s" target="_blank" rel="noopener" class="btn btn--outline-light"><span class="lang-en">View LinkedIn profile →</span><span class="lang-fr">Voir le profil LinkedIn →</span></a>
         </div>
       </div>
     </div>
@@ -89,66 +102,79 @@
 <!-- TIMELINE -->
 <section class="section">
   <div class="container">
-    <div class="grid-2" style="align-items:start;gap:clamp(40px,7vw,80px)">
-      <div>
-        <div class="eyebrow">History</div>
-        <h2 class="display-2">Twenty-five years of milestones.</h2>
+    <div class="eyebrow"><span class="lang-en">History</span><span class="lang-fr">Historique</span></div>
+    <h2 class="display-2"><span class="lang-en">Twenty-five years of milestones.</span><span class="lang-fr">Vingt-cinq ans de jalons.</span></h2>
+    <div class="timeline-h">
+      <div class="timeline-h__track"></div>
+      <div class="timeline-h__item tl-active" onclick="tlClick(this)">
+        <div class="timeline-h__dot"></div>
+        <div class="timeline-h__year">1999</div>
+        <div class="timeline-h__content"><span class="lang-en"><strong>Big Fish International founded</strong>Paris. Focus on procurement talent assessment and development.</span><span class="lang-fr"><strong>Fondation de Big Fish International</strong>Paris. Spécialisation dans l'évaluation et le développement des talents achats.</span></div>
       </div>
-      <div class="timeline">
-        <div class="timeline__item">
-          <span class="timeline__year">1999</span>
-          <div class="timeline__text"><strong>Big Fish International founded</strong>in Paris with a focus on procurement talent assessment and development for industrial companies.</div>
-        </div>
-        <div class="timeline__item">
-          <span class="timeline__year">2004</span>
-          <div class="timeline__text"><strong>CRI methodology launched</strong>— a proprietary Competency and Role Index for procurement professionals, now used across 40+ countries.</div>
-        </div>
-        <div class="timeline__item">
-          <span class="timeline__year">2009</span>
-          <div class="timeline__text"><strong>European expansion</strong>— partnerships with BME (Germany), NEVI (Netherlands), and CIPS (UK). Nine-language delivery capability established.</div>
-        </div>
-        <div class="timeline__item">
-          <span class="timeline__year">2014</span>
-          <div class="timeline__text"><strong>TOSCA framework</strong>— a transformation methodology for procurement organisations integrating culture, process and people change.</div>
-        </div>
-        <div class="timeline__item">
-          <span class="timeline__year">2019</span>
-          <div class="timeline__text"><strong>Lab-B52k launched</strong>— a research and innovation platform connecting 52 000 procurement professionals with academic and industry partners.</div>
-        </div>
-        <div class="timeline__item">
-          <span class="timeline__year">2024</span>
-          <div class="timeline__text"><strong>300+ enterprise references</strong>— a milestone reached across CAC 40, Fortune 500, MDAX and public sector clients.</div>
-        </div>
+      <div class="timeline-h__item" onclick="tlClick(this)">
+        <div class="timeline-h__dot"></div>
+        <div class="timeline-h__year">2004</div>
+        <div class="timeline-h__content"><span class="lang-en"><strong>CRI launched</strong>Proprietary Competency &amp; Role Index — now used across 40+ countries.</span><span class="lang-fr"><strong>Lancement du CRI</strong>Le Competency &amp; Role Index propriétaire — aujourd'hui déployé dans plus de 40 pays.</span></div>
+      </div>
+      <div class="timeline-h__item" onclick="tlClick(this)">
+        <div class="timeline-h__dot"></div>
+        <div class="timeline-h__year">2009</div>
+        <div class="timeline-h__content"><span class="lang-en"><strong>European expansion</strong>Partnerships with BME, NEVI, CIPS. Nine languages established.</span><span class="lang-fr"><strong>Expansion européenne</strong>Partenariats avec BME, NEVI, CIPS. Neuf langues de travail opérationnelles.</span></div>
+      </div>
+      <div class="timeline-h__item" onclick="tlClick(this)">
+        <div class="timeline-h__dot"></div>
+        <div class="timeline-h__year">2014</div>
+        <div class="timeline-h__content"><span class="lang-en"><strong>TOSCA framework</strong>Transformation methodology integrating culture, process and people.</span><span class="lang-fr"><strong>Framework TOSCA</strong>Méthodologie de transformation intégrant culture, processus et personnes.</span></div>
+      </div>
+      <div class="timeline-h__item" onclick="tlClick(this)">
+        <div class="timeline-h__dot"></div>
+        <div class="timeline-h__year">2019</div>
+        <div class="timeline-h__content"><span class="lang-en"><strong>Lab-B52k launched</strong>Research platform — 52 000 professionals, academic &amp; industry partners.</span><span class="lang-fr"><strong>Lancement du Lab-B52k</strong>Plateforme de recherche — 52 000 professionnels, partenaires académiques et industriels.</span></div>
+      </div>
+      <div class="timeline-h__item" onclick="tlClick(this)">
+        <div class="timeline-h__dot"></div>
+        <div class="timeline-h__year">2024</div>
+        <div class="timeline-h__content"><span class="lang-en"><strong>300+ references</strong>Milestone across CAC 40, MDAX, AEX and public sector clients.</span><span class="lang-fr"><strong>300+ références</strong>Cap franchi : CAC 40, MDAX, AEX et secteur public.</span></div>
       </div>
     </div>
   </div>
 </section>
+<script>
+function tlClick(el){
+  document.querySelectorAll('.timeline-h__item').forEach(function(i){i.classList.remove('tl-active')});
+  el.classList.add('tl-active');
+}
+</script>
 
 <!-- VALUES -->
 <section class="section">
   <div class="container">
-    <div class="eyebrow">What we believe</div>
-    <h2 class="display-2 mb-32">Four principles we never compromise on.</h2>
+    <div class="eyebrow"><span class="lang-en">What we believe</span><span class="lang-fr">Ce en quoi nous croyons</span></div>
+    <h2 class="display-2 mb-32"><span class="lang-en">Four principles we never compromise on.</span><span class="lang-fr">Quatre principes non négociables.</span></h2>
     <div class="grid-4">
       <div class="grid-cell card">
         <div class="card__num">01</div>
-        <div class="card__title">People first, always</div>
-        <p class="card__body">Every strategy is only as good as the team executing it. We build people before we build processes.</p>
+        <div class="card__title"><span class="lang-en">People first, always</span><span class="lang-fr">L'humain d'abord, toujours</span></div>
+        <p class="card__body lang-en">Every strategy is only as good as the team executing it. We build people before we build processes.</p>
+      <p class="card__body lang-fr">Toute stratégie ne vaut que par ceux qui l'exécutent. Nous développons les personnes avant de construire les processus.</p>
       </div>
       <div class="grid-cell card">
         <div class="card__num">02</div>
-        <div class="card__title">Evidence-based</div>
-        <p class="card__body">Our frameworks are built on 25 years of data, research partnerships, and observed outcomes — not consulting intuition.</p>
+        <div class="card__title"><span class="lang-en">Evidence-based</span><span class="lang-fr">Fondé sur les données</span></div>
+        <p class="card__body lang-en">Our frameworks are built on 25 years of data, research partnerships, and observed outcomes — not consulting intuition.</p>
+      <p class="card__body lang-fr">Nos frameworks reposent sur 25 ans de données, de partenariats académiques et de résultats observés — pas sur l'intuition du consultant.</p>
       </div>
       <div class="grid-cell card">
         <div class="card__num">03</div>
-        <div class="card__title">Independent</div>
-        <p class="card__body">No software to sell, no hidden agenda. Our advice is ours alone. We are retained for thinking, not for execution contracts.</p>
+        <div class="card__title"><span class="lang-en">Independent</span><span class="lang-fr">Indépendant</span></div>
+        <p class="card__body lang-en">No software to sell, no hidden agenda. Our advice is ours alone. We are retained for thinking, not for execution contracts.</p>
+      <p class="card__body lang-fr">Aucun logiciel à vendre, aucun conflit d'intérêt. Nos recommandations n'appartiennent qu'à nous. On nous retient pour notre pensée, pas pour des contrats d'exécution.</p>
       </div>
       <div class="grid-cell card">
         <div class="card__num">04</div>
-        <div class="card__title">Long-term</div>
-        <p class="card__body">We measure success over years, not quarters. Our client relationships average 7+ years because we build the capability, not the dependency.</p>
+        <div class="card__title"><span class="lang-en">Long-term</span><span class="lang-fr">Long terme</span></div>
+        <p class="card__body lang-en">We measure success over years, not quarters. Our client relationships average 7+ years because we build the capability, not the dependency.</p>
+      <p class="card__body lang-fr">Nous mesurons le succès sur des années, pas des trimestres. Nos relations clients durent en moyenne 7 ans car nous construisons la compétence, pas la dépendance.</p>
       </div>
     </div>
   </div>
@@ -158,12 +184,12 @@
 <section class="section section--ink">
   <div class="container cta-band">
     <div>
-      <div class="eyebrow" style="color:rgba(239,234,224,.5)">Work with us</div>
-      <h2 class="display-3" style="color:var(--surface)">Start with a diagnostic conversation.</h2>
+      <div class="eyebrow" style="color:rgba(239,234,224,.5)"><span class="lang-en">Work with us</span><span class="lang-fr">Travailler avec nous</span></div>
+      <h2 class="display-3" style="color:var(--surface)"><span class="lang-en">Start with a diagnostic conversation.</span><span class="lang-fr">Commençons par une conversation de diagnostic.</span></h2>
     </div>
     <div class="cta-band__btns">
-      <a href="contact.html" class="btn btn--filled">Book a call →</a>
-      <a href="services.html" class="btn btn--outline-light">Our services</a>
+      <a href="contact.html" class="btn btn--filled"><span class="lang-en">Book a call →</span><span class="lang-fr">Prendre RDV →</span></a>
+      <a href="services.html" class="btn btn--outline-light"><span class="lang-en">Our services</span><span class="lang-fr">Nos services</span></a>
     </div>
   </div>
 </section>
@@ -173,44 +199,49 @@
   <div class="container">
     <div class="footer__top">
       <div>
-        <div class="footer__logo" style="text-align:left;margin-left:0"><a href="index.html" style="display:inline-block"><img style="margin:0;display:block" src="assets/logo-sand.svg" alt="Big Fish" width="120" height="52"/></a></div>
+        <div class="footer__logo"><a href="index.html"><img src="assets/logo-sand.svg" alt="Big Fish" width="120" height="52"/></a></div>
         <p class="footer__desc">Paris, France<br/><br/>+33 1 45 62 19 80<br/>info@e-bigfish.com</p>
       </div>
       <div>
-        <div class="footer__heading">Practice</div>
+        <div class="footer__heading"><span class="lang-en">Practice</span><span class="lang-fr">Services</span></div>
         <ul class="footer__links">
-          <li><a href="services.html">Assessment</a></li>
-          <li><a href="services.html">Sourcing</a></li>
-          <li><a href="services.html">Development</a></li>
-          <li><a href="services.html">Deployment</a></li>
+          <li><a href="services.html"><span class="lang-en">Assessment</span><span class="lang-fr">Évaluation</span></a></li>
+          <li><a href="services.html"><span class="lang-en">Sourcing</span><span class="lang-fr">Sourcing</span></a></li>
+          <li><a href="services.html"><span class="lang-en">Development</span><span class="lang-fr">Développement</span></a></li>
+          <li><a href="services.html"><span class="lang-en">Deployment</span><span class="lang-fr">Déploiement</span></a></li>
         </ul>
       </div>
       <div>
-        <div class="footer__heading">Ecosystem</div>
+        <div class="footer__heading"><span class="lang-en">Ecosystem</span><span class="lang-fr">Écosystème</span></div>
         <ul class="footer__links">
-          <li><a href="about.html">Lab-B52k</a></li>
-          <li><a href="about.html">Federations</a></li>
-          <li><a href="about.html">Academic</a></li>
-          <li><a href="about.html">Research</a></li>
+          <li><a href="lab.html"><span class="lang-en">Lab-B52k</span><span class="lang-fr">Lab-B52k</span></a></li>
+          <li><a href="about.html"><span class="lang-en">Federations</span><span class="lang-fr">Fédérations</span></a></li>
+          <li><a href="about.html"><span class="lang-en">Academic</span><span class="lang-fr">Académique</span></a></li>
+          <li><a href="about.html"><span class="lang-en">Research</span><span class="lang-fr">Recherche</span></a></li>
         </ul>
       </div>
       <div>
-        <div class="footer__heading">Company</div>
+        <div class="footer__heading"><span class="lang-en">Company</span><span class="lang-fr">Entreprise</span></div>
         <ul class="footer__links">
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="contact.html">Careers</a></li>
+          <li><a href="about.html"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a></li>
+          <li><a href="work.html"><span class="lang-en">Work</span><span class="lang-fr">Références</span></a></li>
+          <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-fr">Contact</span></a></li>
+          <li><a href="contact.html"><span class="lang-en">Careers</span><span class="lang-fr">Carrières</span></a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
-      <span>© 2026 Big Fish International. All rights reserved.</span>
-      <span>People Centric Development</span>
+      <span><span class="lang-en">© 2026 Big Fish International. All rights reserved.</span><span class="lang-fr">© 2026 Big Fish International. Tous droits réservés.</span></span>
+      <span><span class="lang-en">People Centric Development</span><span class="lang-fr">Développement centré sur l'humain</span></span>
     </div>
   </div>
 </footer>
 
 <script src="script.js"></script>
+
+<script>
+function setLang(l){document.documentElement.setAttribute('data-lang',l);document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang')===l)});localStorage.setItem('bf-lang',l)}
+(function(){var s=localStorage.getItem('bf-lang')||'en';setLang(s)})();
+</script>
 </body>
 </html>
