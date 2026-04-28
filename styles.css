@@ -390,7 +390,7 @@ input, textarea, select {
   flex-shrink: 0;
 }
 
-.hero__logo-item--inverto { height: 88px; }
+.hero__logo-item--inverto { height: 62px; }
 .hero__logo-item--cips    { height: 74px; }
 .hero__logo-item--cdaf    { height: 100px; }
 
@@ -404,6 +404,7 @@ input, textarea, select {
 }
 .hero__logo-item--cdaf img   { max-height: 88px;  max-width: 221px; }
 .hero__logo-item--cips img   { max-height: 62px;  max-width: 154px; }
+.hero__logo-item--inverto img { max-height: 42px; max-width: 105px; }
 .hero__logo-item--ipsera {
   mix-blend-mode: multiply;
   background: var(--surface);

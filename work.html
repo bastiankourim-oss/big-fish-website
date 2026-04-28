@@ -23,10 +23,7 @@
       border: 1px solid var(--line);
       margin-top: 32px;
     }
-    .results-row__item {
-      background: var(--surface);
-      padding: 24px 28px;
-    }
+    .results-row__item { background: var(--surface); padding: 24px 28px; }
     .results-row__num {
       font-family: var(--font-display);
       font-size: 40px;
@@ -34,11 +31,53 @@
       color: var(--accent);
       line-height: 1;
     }
-    .results-row__label {
-      font-size: 13px;
-      color: var(--mute);
-      margin-top: 8px;
+    .results-row__label { font-size: 13px; color: var(--mute); margin-top: 8px; }
+
+    /* ── Logo Universe ─────────────────────────────────────── */
+    .lu-wrap {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: clamp(20px,2.5vw,32px) clamp(24px,4vw,64px) clamp(20px,2.5vw,32px);
     }
+    .lu-label {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--mute);
+      text-align: center;
+      margin-bottom: clamp(16px,2vw,24px);
+    }
+    .lu-stage {
+      position: relative;
+      width: 100%;
+      height: 230px;
+      overflow: hidden;
+    }
+    .lu-logo {
+      position: absolute;
+      left: 0; top: 0;
+      display: block;
+      will-change: translate;
+      filter: opacity(.75);
+      transition: filter .35s ease, scale .38s cubic-bezier(.34,1.56,.64,1);
+    }
+    .lu-logo:hover {
+      filter: opacity(1);
+      scale: 1.3;
+      z-index: 20;
+    }
+    .lu-logo img {
+      display: block;
+      width: auto;
+      max-width: 80px;
+      pointer-events: none;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+    .lu-logo--multiply { background: var(--surface); }
+    .lu-logo--multiply img { mix-blend-mode: multiply; }
+    @media (max-width: 768px) { .lu-stage { height: 180px; } }
   </style>
 </head>
 <body>
@@ -81,34 +120,21 @@
 <section class="page-hero">
   <div class="container">
     <div class="page-hero__eyebrow eyebrow"><span class="lang-en">Our work</span><span class="lang-fr">Nos références</span></div>
-    <h1 class="display-1"><span class="lang-en">300+ enterprises.<br/>40+ countries.</span><span class="lang-fr">300+ entreprises.<br/>40+ pays.</span></h1>
+    <h1 class="display-1"><span class="lang-en">300+ enterprises. 40+ countries.</span><span class="lang-fr">300+ entreprises. 40+ pays.</span></h1>
     <p class="page-hero__sub lang-en">Selected engagements across two decades of procurement transformation. Due to client confidentiality, company names are withheld unless explicit consent is given.</p>
     <p class="page-hero__sub lang-fr">Missions sélectionnées sur deux décennies de transformation achats. Par souci de confidentialité, les noms des entreprises sont anonymisés sauf accord explicite.</p>
   </div>
 </section>
 
-<!-- STATS BAND -->
-<div class="stats">
+<!-- LOGO UNIVERSE -->
+<div class="lu-wrap">
   <div class="container">
-    <div class="stats__grid">
-      <div class="stats__item">
-        <div class="stats__num">300<span class="accent-dot">+</span></div>
-        <div class="stats__label"><span class="lang-en">Enterprise and ETI engagements</span><span class="lang-fr">Missions grandes entreprises et ETI</span></div>
-      </div>
-      <div class="stats__item">
-        <div class="stats__num">40<span class="accent-dot">+</span></div>
-        <div class="stats__label"><span class="lang-en">Countries where we have delivered work</span><span class="lang-fr">Pays d'intervention</span></div>
-      </div>
-      <div class="stats__item">
-        <div class="stats__num">52<span class="accent-dot">k</span></div>
-        <div class="stats__label"><span class="lang-en">Procurement professionals in our network</span><span class="lang-fr">Professionnels achats dans notre réseau</span></div>
-      </div>
-      <div class="stats__item">
-        <div class="stats__num">7<span class="accent-dot">y</span></div>
-        <div class="stats__label"><span class="lang-en">Average client relationship length</span><span class="lang-fr">Durée moyenne des relations clients</span></div>
-      </div>
-    </div>
+    <p class="lu-label">
+      <span class="lang-en">A selection of the 300+ organizations we have worked with</span>
+      <span class="lang-fr">Une sélection des 300+ organisations avec lesquelles nous avons travaillé</span>
+    </p>
   </div>
+  <div class="lu-stage" id="lu-stage"></div>
 </div>
 
 <!-- CASE STUDIES -->
@@ -277,6 +303,167 @@
 <script>
 function setLang(l){document.documentElement.setAttribute('data-lang',l);document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang')===l)});localStorage.setItem('bf-lang',l)}
 (function(){var s=localStorage.getItem('bf-lang')||'en';setLang(s)})();
+</script>
+
+<script>
+(function () {
+  var ALL_LOGOS = [
+    'assets/logos/allianz.svg','assets/logos/audi.svg','assets/logos/bilfinger.jpg',
+    'assets/logos/bmw.svg','assets/logos/booz_allen_hamilton.svg','assets/logos/bouygues_telecom.svg',
+    'assets/logos/brossard.png','assets/logos/cadbury.svg','assets/logos/cemex.svg',
+    'assets/logos/coca_cola.svg','assets/logos/danone.png','assets/logos/eiffage.svg',
+    'assets/logos/essilor.svg','assets/logos/ey.svg','assets/logos/federal_mogul.svg',
+    'assets/logos/ferrero.svg','assets/logos/groupama.svg','assets/logos/groupe_rocher.png',
+    'assets/logos/heineken.svg','assets/logos/henkel.svg','assets/logos/id_logistics.svg',
+    'assets/logos/idex.svg','assets/logos/institut_pasteur.svg','assets/logos/iter.svg',
+    'assets/logos/jcdecaux.svg','assets/logos/kingfisher.png','assets/logos/kraft_foods.svg',
+    'assets/logos/l_oreal.svg','assets/logos/lacoste.svg','assets/logos/lactalis.svg',
+    'assets/logos/logista.svg','assets/logos/lsg_sky_chefs.svg','assets/logos/lvmh.svg',
+    'assets/logos/manitou.svg','assets/logos/manuloc.jpg','assets/logos/mars.svg',
+    'assets/logos/mccain.svg','assets/logos/michelin.svg','assets/logos/nexans.svg',
+    'assets/logos/nokia.svg','assets/logos/orlen.svg','assets/logos/plastic_omnium.svg',
+    'assets/logos/pwc.svg','assets/logos/reckitt_benckiser.svg','assets/logos/renault.svg',
+    'assets/logos/rolls_royce.svg','assets/logos/safran.svg','assets/logos/siemens.svg',
+    'assets/logos/sncf.svg','assets/logos/sodexo.svg','assets/logos/sogefi.svg',
+    'assets/logos/spx.svg','assets/logos/swarovski.svg','assets/logos/thales.svg',
+    'assets/logos/tnt.svg','assets/logos/total.svg','assets/logos/unilever.svg',
+    'assets/logos/valeo.svg','assets/logos/wabco.png','assets/logos/wavin.svg',
+    'assets/logos/wedel.svg','assets/logos/xchanging.jpg','assets/logos/zodiac_aerospace.png'
+  ];
+
+  var DESKTOP_COUNT = 42;
+  var MOBILE_COUNT  = 18;
+  var isMobile = window.innerWidth <= 768;
+  var logos = isMobile ? ALL_LOGOS.slice(0, MOBILE_COUNT) : ALL_LOGOS.slice(0, DESKTOP_COUNT);
+
+  var stage = document.getElementById('lu-stage');
+  if (!stage) return;
+
+  var W = stage.offsetWidth;
+  var H = stage.offsetHeight;
+
+  var GRAVITY    = 0.00004;
+  var DAMP       = 0.955;
+  var VMAX       = 0.35;
+  var REPEL_R    = 105;
+  var MOUSE_R    = 130;
+  var MOUSE_F    = 0.10;
+  var LOGO_W     = 80;
+  var LOGO_H     = 36;
+
+  var nodes = [];
+  var mouse = { x: -9999, y: -9999 };
+  var rafId = null;
+  var running = false;
+
+  // Seed positions in a rough grid with jitter
+  var cols = Math.ceil(Math.sqrt(logos.length * (W / H)));
+  var rows = Math.ceil(logos.length / cols);
+  var cellW = W / cols;
+  var cellH = H / rows;
+
+  logos.forEach(function (src, i) {
+    var el = document.createElement('div');
+    el.className = 'lu-logo' + (/bilfinger|manuloc/.test(src) ? ' lu-logo--multiply' : '');
+    var img = document.createElement('img');
+    img.src = src;
+    img.alt = '';
+    el.appendChild(img);
+    stage.appendChild(el);
+
+    var col = i % cols;
+    var row = Math.floor(i / cols);
+    var x = cellW * col + cellW * 0.05 + Math.random() * cellW * 0.9 - LOGO_W / 2;
+    var y = cellH * row + cellH * 0.05 + Math.random() * cellH * 0.9 - LOGO_H / 2;
+
+    x = Math.max(0, Math.min(W - LOGO_W, x));
+    y = Math.max(0, Math.min(H - LOGO_H, y));
+
+    nodes.push({ el: el, x: x, y: y, vx: 0, vy: 0, opacity: 0 });
+
+    // staggered entrance
+    setTimeout(function (n) {
+      return function () {
+        n.opacity = 1;
+        n.el.style.opacity = '1';
+      };
+    }(nodes[i]), i * 70);
+  });
+
+  function tick() {
+    W = stage.offsetWidth;
+    var cx = W / 2;
+    var cy = H / 2;
+
+    for (var i = 0; i < nodes.length; i++) {
+      var a = nodes[i];
+      // vertical gravity only — no horizontal pull so logos spread freely left-right
+      a.vy += (cy - (a.y + LOGO_H / 2)) * GRAVITY;
+
+      // mouse repulsion
+      var mdx = (a.x + LOGO_W / 2) - mouse.x;
+      var mdy = (a.y + LOGO_H / 2) - mouse.y;
+      var md  = Math.sqrt(mdx * mdx + mdy * mdy);
+      if (md < MOUSE_R && md > 0.5) {
+        var mf = (MOUSE_R - md) / MOUSE_R * MOUSE_F;
+        a.vx += (mdx / md) * mf;
+        a.vy += (mdy / md) * mf;
+      }
+
+      // logo-logo repulsion
+      for (var j = i + 1; j < nodes.length; j++) {
+        var b = nodes[j];
+        var dx = (a.x + LOGO_W / 2) - (b.x + LOGO_W / 2);
+        var dy = (a.y + LOGO_H / 2) - (b.y + LOGO_H / 2);
+        var d  = Math.sqrt(dx * dx + dy * dy);
+        if (d < REPEL_R && d > 0.5) {
+          var f = (REPEL_R - d) / REPEL_R * 0.12;
+          var nx = dx / d, ny = dy / d;
+          a.vx += nx * f; a.vy += ny * f;
+          b.vx -= nx * f; b.vy -= ny * f;
+        }
+      }
+    }
+
+    for (var i = 0; i < nodes.length; i++) {
+      var n = nodes[i];
+      n.vx *= DAMP;
+      n.vy *= DAMP;
+      var sp = Math.sqrt(n.vx * n.vx + n.vy * n.vy);
+      if (sp > VMAX) { n.vx = n.vx / sp * VMAX; n.vy = n.vy / sp * VMAX; }
+
+      n.x += n.vx;
+      n.y += n.vy;
+
+      // boundary push
+      if (n.x < 0)          { n.x = 0;          n.vx = Math.abs(n.vx) * 0.4; }
+      if (n.x > W - LOGO_W) { n.x = W - LOGO_W; n.vx = -Math.abs(n.vx) * 0.4; }
+      if (n.y < 0)          { n.y = 0;          n.vy = Math.abs(n.vy) * 0.4; }
+      if (n.y > H - LOGO_H) { n.y = H - LOGO_H; n.vy = -Math.abs(n.vy) * 0.4; }
+
+      n.el.style.translate = n.x.toFixed(1) + 'px ' + n.y.toFixed(1) + 'px';
+    }
+
+    rafId = requestAnimationFrame(tick);
+  }
+
+  function start() { if (!running) { running = true; tick(); } }
+  function stop()  { if (running)  { running = false; cancelAnimationFrame(rafId); } }
+
+  stage.addEventListener('mousemove', function (e) {
+    var r = stage.getBoundingClientRect();
+    mouse.x = e.clientX - r.left;
+    mouse.y = e.clientY - r.top;
+  });
+  stage.addEventListener('mouseleave', function () {
+    mouse.x = -9999; mouse.y = -9999;
+  });
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries[0].isIntersecting ? start() : stop();
+  }, { threshold: 0.1 });
+  observer.observe(stage);
+})();
 </script>
 </body>
 </html>
