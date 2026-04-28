@@ -58,19 +58,16 @@
 <!-- STORY + TIMELINE -->
 <section class="section section--flush" style="padding-top:clamp(14px,1.7vw,23px)">
   <div class="container">
-    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(40px,6vw,80px);align-items:start">
-      <div>
+    <div style="display:grid;grid-template-columns:1fr 2.2fr;gap:clamp(40px,6vw,80px);align-items:start">
+      <!-- Left: both paragraphs -->
+      <div style="padding-top:6px">
         <p class="body lang-en" style="opacity:.8;text-align:justify">Over twenty-five years we have built proprietary frameworks — CRI, SRI, TOSCA — that assess, source, develop and deploy procurement talent with rigour and human intelligence. <strong>We work with fewer clients, more deeply. We measure outcomes, not activity.</strong></p>
         <p class="body lang-fr" style="opacity:.8;text-align:justify">En vingt-cinq ans, nous avons construit des frameworks propriétaires — CRI, SRI, TOSCA — qui évaluent, sourcent, développent et déploient les talents achats avec rigueur et intelligence humaine. <strong>Moins de clients, mais davantage de profondeur. Des résultats mesurés, jamais de l'activité pour l'activité.</strong></p>
+        <p class="body lang-en" style="opacity:.8;text-align:justify;margin-top:clamp(16px,2vw,24px)">Today our network spans 52 000 procurement professionals, 47 federations, and academic partnerships on three continents. <strong>The substance is not the problem. It never was.</strong></p>
+        <p class="body lang-fr" style="opacity:.8;text-align:justify;margin-top:clamp(16px,2vw,24px)">Aujourd'hui notre réseau couvre 52 000 professionnels achats, 47 fédérations et des partenariats académiques sur trois continents. <strong>Ce n'est pas la matière qui fait défaut. Ça ne l'a jamais été.</strong></p>
       </div>
-      <div>
-        <p class="body lang-en" style="opacity:.8;text-align:justify">Today our network spans 52 000 procurement professionals, 47 federations, and academic partnerships on three continents. <strong>The substance is not the problem. It never was.</strong></p>
-        <p class="body lang-fr" style="opacity:.8;text-align:justify">Aujourd'hui notre réseau couvre 52 000 professionnels achats, 47 fédérations et des partenariats académiques sur trois continents. <strong>Ce n'est pas la matière qui fait défaut. Ça ne l'a jamais été.</strong></p>
-      </div>
-    </div>
-    <!-- Timeline: all 6 dates on one line -->
-    <div class="timeline-h" style="margin-top:clamp(21px,2.6vw,32px)">
-      <div class="timeline-h__track"></div>
+      <!-- Right: timeline -->
+      <div class="timeline-h">
       <div class="timeline-h__item tl-active" onclick="tlClick(this)">
         <div class="timeline-h__dot"></div>
         <div class="timeline-h__year">1999</div>
@@ -101,14 +98,46 @@
         <div class="timeline-h__year">2024</div>
         <div class="timeline-h__content"><span class="lang-en"><strong>300+ references</strong>Milestone across CAC 40, MDAX, AEX and public sector clients.</span><span class="lang-fr"><strong>300+ références</strong>Cap franchi : CAC 40, MDAX, AEX et secteur public.</span></div>
       </div>
-    </div>
-  </div>
+      </div><!-- /timeline-h right col -->
+    </div><!-- /2-col grid -->
+  </div><!-- /container -->
 </section>
 <script>
-function tlClick(el){
-  document.querySelectorAll('.timeline-h__item').forEach(function(i){i.classList.remove('tl-active')});
-  el.classList.add('tl-active');
-}
+(function(){
+  var tl = document.querySelector('.timeline-h');
+  if(!tl) return;
+  var items = tl.querySelectorAll('.timeline-h__item');
+
+  /* --- 1. hide items before entrance --- */
+  items.forEach(function(item){ item.classList.add('tl-init'); });
+
+  /* --- 2. staggered fade-in when section scrolls into view --- */
+  var entranceIO = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(!entry.isIntersecting) return;
+      var idx = Array.from(items).indexOf(entry.target);
+      setTimeout(function(){ entry.target.classList.remove('tl-init'); }, idx * 90);
+      entranceIO.unobserve(entry.target);
+    });
+  }, { threshold: 0.1 });
+  items.forEach(function(item){ entranceIO.observe(item); });
+
+  /* --- 3. fill track line when timeline enters viewport --- */
+  var fillIO = new IntersectionObserver(function(entries){
+    if(entries[0].isIntersecting){
+      tl.classList.add('tl-in-view');
+      fillIO.disconnect();
+    }
+  }, { threshold: 0.25 });
+  fillIO.observe(tl);
+
+  /* --- 4. click handler: activate + dim others --- */
+  window.tlClick = function(el){
+    items.forEach(function(i){ i.classList.remove('tl-active'); });
+    el.classList.add('tl-active');
+    tl.classList.add('tl-has-active');
+  };
+})();
 </script>
 
 <!-- FOUNDER -->
